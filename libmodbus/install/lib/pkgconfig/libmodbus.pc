@@ -1,0 +1,10 @@
+prefix=/home/mtam/tamvm/SDK_rk3506/hello/libmodbus/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: modbus
+Description: Modbus library
+Version: 3.1.11
+Libs: -L${libdir} -lmodbus
+Cflags: -I${includedir}/modbus

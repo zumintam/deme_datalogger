@@ -1,0 +1,277 @@
+ERROR Illegal data value
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+Connecting to 127.0.0.1:1502
+** UNIT TESTING **
+1/1 No response timeout modification on connect: OK
+
+TEST WRITE/READ:
+[00][01][00][00][00][06][FF][05][01][30][FF][00]
+Waiting for a confirmation...
+<00><01><00><00><00><06><FF><05><01><30><FF><00>
+1/2 modbus_write_bit: OK
+[00][02][00][00][00][06][FF][01][01][30][00][01]
+Waiting for a confirmation...
+<00><02><00><00><00><04><FF><01><01><01>
+2/2 modbus_read_bits: OK
+OK
+[00][03][00][00][00][0C][FF][0F][01][30][00][25][05][CD][6B][B2][0E][1B]
+Waiting for a confirmation...
+<00><03><00><00><00><06><FF><0F><01><30><00><25>
+1/2 modbus_write_bits: OK
+[00][04][00][00][00][06][FF][01][01][30][00][25]
+Waiting for a confirmation...
+<00><04><00><00><00><08><FF><01><05><CD><6B><B2><0E><1B>
+2/2 modbus_read_bits: OK
+OK
+OK
+OK
+OK
+OK
+OK
+[00][05][00][00][00][06][FF][02][01][C4][00][16]
+Waiting for a confirmation...
+<00><05><00><00><00><06><FF><02><03><AC><DB><35>
+1/1 modbus_read_input_bits: OK
+OK
+OK
+OK
+OK
+[00][06][00][00][00][06][FF][06][01][60][12][34]
+Waiting for a confirmation...
+<00><06><00><00><00><06><FF><06><01><60><12><34>
+1/2 modbus_write_register: OK
+[00][07][00][00][00][06][FF][03][01][60][00][01]
+Waiting for a confirmation...
+<00><07><00><00><00><05><FF><03><02><12><34>
+2/2 modbus_read_registers: OK
+OK
+[00][08][00][00][00][0D][FF][10][01][60][00][03][06][02][2B][00][01][00][64]
+Waiting for a confirmation...
+<00><08><00><00><00><06><FF><10><01><60><00><03>
+1/5 modbus_write_registers: OK
+[00][09][00][00][00][06][FF][03][01][60][00][03]
+Waiting for a confirmation...
+<00><09><00><00><00><09><FF><03><06><02><2B><00><01><00><64>
+2/5 modbus_read_registers: OK
+OK
+OK
+OK
+[00][0A][00][00][00][06][FF][03][01][60][00][00]
+Waiting for a confirmation...
+<00><0A><00><00><00><03><FF><83><03>
+3/5 modbus_read_registers (0): OK
+[00][0B][00][00][00][0F][FF][17][01][60][00][03][01][61][00][02][04][00][00][00][00]
+Waiting for a confirmation...
+<00><0B><00><00><00><09><FF><17><06><02><2B><00><00><00><00>
+4/5 modbus_write_and_read_registers: OK
+OK
+OK
+OK
+[00][0C][00][00][00][06][FF][04][01][08][00][01]
+Waiting for a confirmation...
+<00><0C><00><00><00><05><FF><04><02><00><0A>
+1/1 modbus_read_input_registers: OK
+OK
+1/1 Write mask: [00][0D][00][00][00][06][FF][06][01][60][00][12]
+Waiting for a confirmation...
+<00><0D><00><00><00><06><FF><06><01><60><00><12>
+[00][0E][00][00][00][08][FF][16][01][60][00][F2][00][25]
+Waiting for a confirmation...
+<00><0E><00><00><00><08><FF><16><01><60><00><F2><00><25>
+OK
+[00][0F][00][00][00][06][FF][03][01][60][00][01]
+Waiting for a confirmation...
+<00><0F><00><00><00><05><FF><03><02><00><17>
+OK
+
+TEST FLOATS
+1/4 Set/get float ABCD: OK
+OK
+2/4 Set/get float DCBA: OK
+OK
+3/4 Set/get float BADC: OK
+OK
+4/4 Set/get float CDAB: OK
+OK
+
+At this point, error messages doesn't mean the test has failed
+
+TEST ILLEGAL DATA ADDRESS:
+[00][10][00][00][00][06][FF][01][00][00][00][01]
+Waiting for a confirmation...
+<00><10><00><00><00><03><FF><81><02>
+* modbus_read_bits (0): OK
+[00][11][00][00][00][06][FF][01][01][30][00][26]
+Waiting for a confirmation...
+<00><11><00><00><00><03><FF><81><02>
+* modbus_read_bits (max): OK
+[00][12][00][00][00][06][FF][02][00][00][00][01]
+Waiting for a confirmation...
+<00><12><00><00><00><03><FF><82><02>
+* modbus_read_input_bits (0): OK
+[00][13][00][00][00][06][FF][02][01][C4][00][17]
+Waiting for a confirmation...
+<00><13><00><00><00><03><FF><82><02>
+* modbus_read_input_bits (max): OK
+[00][14][00][00][00][06][FF][03][00][00][00][01]
+Waiting for a confirmation...
+<00><14><00><00><00><03><FF><83><02>
+* modbus_read_registers (0): OK
+[00][15][00][00][00][06][FF][03][01][60][00][21]
+Waiting for a confirmation...
+<00><15><00><00><00><03><FF><83><02>
+* modbus_read_registers (max): OK
+[00][16][00][00][00][06][FF][04][00][00][00][01]
+Waiting for a confirmation...
+<00><16><00><00><00><03><FF><84><02>
+* modbus_read_input_registers (0): OK
+[00][17][00][00][00][06][FF][04][01][08][00][02]
+Waiting for a confirmation...
+<00><17><00><00><00><03><FF><84><02>
+* modbus_read_input_registers (max): OK
+[00][18][00][00][00][06][FF][05][00][00][FF][00]
+Waiting for a confirmation...
+<00><18><00>ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Illegal data address
+ERROR Too many bits requested (2001 > 2000)
+ERROR Too many discrete inputs requested (2001 > 2000)
+ERROR Too many registers requested (126 > 125)
+ERROR Too many input registers requested (126 > 125)
+ERROR Writing too many bits (1969 > 1968)
+ERROR Trying to write to too many registers (124 > 123)
+ERROR Illegal data value
+ERROR Illegal data value
+Invalid transaction ID received 0x0 (not 0x28)
+ERROR Connection timed out: select
+<00><00><03><FF><85><02>
+* modbus_write_bit (0): OK
+[00][19][00][00][00][06][FF][05][01][55][FF][00]
+Waiting for a confirmation...
+<00><19><00><00><00><03><FF><85><02>
+* modbus_write_bit (max): OK
+[00][1A][00][00][00][08][FF][0F][00][00][00][01][01][00]
+Waiting for a confirmation...
+<00><1A><00><00><00><03><FF><8F><02>
+* modbus_write_bits (0): OK
+[00][1B][00][00][00][0C][FF][0F][01][55][00][25][05][AC][DB][B5][0E][1B]
+Waiting for a confirmation...
+<00><1B><00><00><00><03><FF><8F><02>
+* modbus_write_bits (max): OK
+[00][1C][00][00][00][06][FF][06][00][00][20][00]
+Waiting for a confirmation...
+<00><1C><00><00><00><03><FF><86><02>
+* modbus_write_register (0): OK
+[00][1D][00][00][00][06][FF][06][01][80][20][00]
+Waiting for a confirmation...
+<00><1D><00><00><00><03><FF><86><02>
+* modbus_write_register (max): OK
+[00][1E][00][00][00][09][FF][10][00][00][00][01][02][20][00]
+Waiting for a confirmation...
+<00><1E><00><00><00><03><FF><90><02>
+* modbus_write_registers (0): OK
+[00][1F][00][00][00][0D][FF][10][01][80][00][03][06][20][00][47][F1][00][00]
+Waiting for a confirmation...
+<00><1F><00><00><00><03><FF><90><02>
+* modbus_write_registers (max): OK
+[00][20][00][00][00][08][FF][16][00][00][00][F2][00][25]
+Waiting for a confirmation...
+<00><20><00><00><00><03><FF><96><02>
+* modbus_mask_write_registers (0): OK
+[00][21][00][00][00][08][FF][16][01][80][00][F2][00][25]
+Waiting for a confirmation...
+<00><21><00><00><00><03><FF><96><02>
+* modbus_mask_write_registers (max): OK
+[00][22][00][00][00][0D][FF][17][00][00][00][01][00][00][00][01][02][20][00]
+Waiting for a confirmation...
+<00><22><00><00><00><03><FF><97><02>
+* modbus_write_and_read_registers (0): OK
+[00][23][00][00][00][11][FF][17][01][80][00][03][01][80][00][03][06][20][00][47][F1][00][00]
+Waiting for a confirmation...
+<00><23><00><00><00><03><FF><97><02>
+* modbus_write_and_read_registers (max): OK
+
+TEST TOO MANY DATA ERROR:
+* modbus_read_bits: OK
+* modbus_read_input_bits: OK
+* modbus_read_registers: OK
+* modbus_read_input_registers: OK
+* modbus_write_bits: OK
+* modbus_write_registers: OK
+
+TEST SLAVE ADDRESS:
+1/2 Not compliant slave address is refused: OK
+2/2 Not compliant slave address is allowed: OK
+OK
+[00][24][00][00][00][06][FF][05][01][32][FF][00]
+Waiting for a confirmation...
+<00><24><00><00><00><03><FF><85><03>
+* modbus_write_bit (triggers invalid reply): OK
+[00][25][00][00][00][06][FF][06][01][70][00][42]
+Waiting for a confirmation...
+<00><25><00><00><00><03><FF><86><03>
+* modbus_write_register (triggers invalid reply): OK
+
+TEST SLAVE REPLY:
+[00][26][00][00][00][06][12][03][01][60][00][03]
+Waiting for a confirmation...
+<00><26><00><00><00><09><12><03><06><00><17><00><00><00><00>
+1/3 Response from slave 18: OK
+OK
+[00][27][00][00][00][06][00][03][01][60][00][03]
+Waiting for a confirmation...
+<00><27><00><00><00><09><00><03><06><00><17><00><00><00><00>
+2/3 Reply after a query with unit id == 0: OK
+3/3 Response with an invalid TID or slave: [00][28][00][00][00][06][FF][03][01][71][00][01]
+Waiting for a confirmation...
+<00><00><00><00><00><05><FF><03><02><00><00>
+Bytes flushed (0)
+OK
+1/2 Report slave ID truncated: 
+[00][29][00][00][00][02][FF][11]
+Waiting for a confirmation...
+<00><29><00><00><00><0E><FF><11><0B><B4><FF><4C><4D><42><33><2E><31><2E><31><31>
+OK
+2/2 Report slave ID: 
+[00][2A][00][00][00][02][FF][11]
+Waiting for a confirmation...
+<00><2A><00><00><00><0E><FF><11><0B><B4><FF><4C><4D><42><33><2E><31><2E><31><31>
+OK
+OK
+OK
+Additional data: LMB3.1.11
+1/8 Invalid response timeout (zero): OK
+2/8 Invalid response timeout (too large us): OK
+3/8 Invalid byte timeout (too large us): OK
+[00][2B][00][00][00][06][FF][03][01][60][00][03]
+Waiting for a confirmation...
+<00><2B><00><00><00><09><FF><03><06><00><17><00><00><00><00>
+4/8 1us response timeout: FAILED (can fail on some platforms)
+Bytes flushed (0)
+[00][2C][00][00][00][06][FF][03][01][72][00][01]
+Waiting for a confirmation...
+Bytes flushed (0)
+5/8 Too short response timeout (0.2s < 0.5s): OK
+Bytes flushed (11)
+[00][2D][00][00][00][06][FF][03][01][72][00][01]
+Waiting for a confirmation...
+<00><2D><00><00><00><05><FF><03><0ERROR Connection timed out: select
+Message length not corresponding to the computed length (11 != 13)
+ERROR Slave device or server is busy
+ERROR The connection is not established.

@@ -1,0 +1,60 @@
+./configure 	--host=arm-none-linux-gnueabihf \
+		CC="/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-gcc" \
+		--prefix=$PWD/build \
+		--enable-static \
+		--enable-shared && make install
+
+
+
+
+
+
+
+
+export LDFLAGS="-lgcc -lgcc_s"; ./configure --host=arm-none-linux-gnueabihf \
+
+
+
+
+
+# 5️⃣ Nếu có autogen.sh
+if [ -f autogen.sh ]; then
+    ./autogen.sh
+
+
+
+TOOLCHAIN=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host
+SYSROOT=$TOOLCHAIN/arm-buildroot-linux-gnueabihf/sysroot
+
+export CC=$TOOLCHAIN/bin/arm-buildroot-linux-gnueabihf-gcc
+export CXX=$TOOLCHAIN/bin/arm-buildroot-linux-gnueabihf-g++
+export AR=$TOOLCHAIN/bin/arm-buildroot-linux-gnueabihf-ar
+export RANLIB=$TOOLCHAIN/bin/arm-buildroot-linux-gnueabihf-ranlib
+export LD=$TOOLCHAIN/bin/arm-buildroot-linux-gnueabihf-ld
+export STRIP=$TOOLCHAIN/bin/arm-buildroot-linux-gnueabihf-strip
+
+export CFLAGS="--sysroot=$SYSROOT -I$SYSROOT/usr/include"
+export CXXFLAGS="--sysroot=$SYSROOT -I$SYSROOT/usr/include"
+export LDFLAGS="--sysroot=$SYSROOT -L$SYSROOT/usr/lib"
+export CPPFLAGS="$CFLAGS"
+
+
+
+./configure \
+    --host=arm-buildroot-linux-gnueabihf \
+    --prefix=$PWD/build \
+    --enable-static \
+    --enable-shared \
+    --with-epoll \
+    CC=$CC \
+    CXX=$CXX \
+    AR=$AR \
+    RANLIB=$RANLIB \
+    LD=$LD \
+    CFLAGS="$CFLAGS" \
+    CXXFLAGS="$CXXFLAGS" \
+    CPPFLAGS="$CPPFLAGS" \
+    LDFLAGS="$LDFLAGS"
+
+make -j$(nproc)
+make install
