@@ -1,0 +1,14 @@
+{
+    "device_id": "1",
+    "serial_port": "/dev/ttyS3",
+    "baudrate": 9600,
+    "slave_id": 1,
+    "poll_interval_ms": 300,
+    "registers": {
+        "voltage_L1": {
+            "address": 4000,
+            "scale": 0.1,
+            "quantity": 1
+        }
+    }
+}

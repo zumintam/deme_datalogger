@@ -1,63 +1,73 @@
-#
-# MAKEFILE CHO DỰ ÁN C++ SỬ DỤNG LIBMODBUS RTU TRÊN ARM 32-BIT
-#
-# LƯU Ý: Đảm bảo bạn đang sử dụng TAB (không phải SPACE) cho các lệnh trong quy tắc biên dịch.
-#
+# ==============================================================================
+# 1. ĐỊNH NGHĨA TOOLCHAIN VÀ ĐƯỜNG DẪN
+# ==============================================================================
 
-# 1. ĐỊNH NGHĨA TOOLCHAIN C++
-# Thay thế TARGET_CC bằng TARGET_CXX (trình biên dịch C++)
-# Đường dẫn toolchain cần được điều chỉnh chính xác theo hệ thống của bạn.
-TARGET_CXX = /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++
+# Toolchain cho RK3506 ARM
+SDK_PATH    = /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin
+CROSS_COMPILE = $(SDK_PATH)/arm-none-linux-gnueabihf-
+TARGET_CXX  = $(CROSS_COMPILE)g++
+TARGET_CC   = $(CROSS_COMPILE)gcc
 
-# 2. ĐỊNH NGHĨA FILE MÃ NGUỒN C++ CẦN BIÊN DỊCH
-TARGET = hello_modbus_rtu_cpp
-SOURCE = main.cpp  # Thay modbus.c bằng main.cpp
+# Tên file thực thi cuối cùng
+TARGET      = hello_modbus_rtu_cpp
 
-# 3. ĐƯỜNG DẪN LIBMODBUS
-# Giả sử bạn đã copy libmodbus vào thư mục này
-MODBUS_INCLUDE = ../libmodbus/build/include/modbus
-MODBUS_LIB = ../libmodbus/build/lib/libmodbus.a
+# Thư mục chứa các file biên dịch tạm (.o) - Đây là "Recipe" để không bị rối mắt
+OBJ_DIR     = build
 
-# 4. CÁC CỜ BIÊN DỊCH VÀ LIÊN KẾT
-# TARGET_CXXFLAGS (C++ Flags)
-# Thêm cờ -std=c++11 (hoặc c++17, c++20 tùy nhu cầu)
-TARGET_CXXFLAGS = -Wall -std=c++11 -I$(MODBUS_INCLUDE) -D_GNU_SOURCE
-# TARGET_LDFLAGS (Linker Flags)
-# Dùng -lm (thư viện toán học) và liên kết tĩnh với libmodbus.a
-TARGET_LDFLAGS = -lm $(MODBUS_LIB) -static
+# Các thư mục chứa mã nguồn
+DRIVER_DIR  = drivers/meter_driver
+CJSON_DIR   = components/libcjson
 
-# Định nghĩa mục tiêu mặc định
+# Thư viện Libmodbus
+MODBUS_INC  = ../libmodbus/build/include/modbus
+MODBUS_LIB  = ../libmodbus/build/lib/libmodbus.a
+
+# ==============================================================================
+# 2. FILE NGUỒN VÀ FLAGS
+# ==============================================================================
+
+# Danh sách file CPP và C
+SRCS_CPP    = main.cpp $(DRIVER_DIR)/meter_driver.cpp $(DRIVER_DIR)/meter_config.cpp
+SRCS_C      = $(CJSON_DIR)/cJSON.c
+
+# Tự động tạo danh sách file .o nằm trong thư mục OBJ_DIR
+# Ví dụ: main.cpp -> build/main.o, drivers/xxx.cpp -> build/drivers/xxx.o
+OBJS        = $(SRCS_CPP:%.cpp=$(OBJ_DIR)/%.o) $(SRCS_C:%.c=$(OBJ_DIR)/%.o)
+
+# Cờ biên dịch
+CXXFLAGS    = -Wall -std=c++11 -O2 -I$(MODBUS_INC) -I$(DRIVER_DIR) -I$(CJSON_DIR) -D_GNU_SOURCE
+CFLAGS      = -Wall -O2 -I$(MODBUS_INC) -I$(CJSON_DIR) -D_GNU_SOURCE
+LDFLAGS     = -lm $(MODBUS_LIB) -static -lpthread
+
+# ==============================================================================
+# 3. QUY TẮC BIÊN DỊCH (RECIPIES)
+# ==============================================================================
+
 all: $(TARGET)
 
-# 6. QUY TẮC BIÊN DỊCH CHO FILE C++
-$(TARGET): $(SOURCE)
-	@echo "--- Biên dịch C++ với libmodbus cho ARM 32-bit ---"
-	# Sử dụng TARGET_CXX (g++) để biên dịch C++
-	$(TARGET_CXX) $(TARGET_CXXFLAGS) $^ -o $@ $(TARGET_LDFLAGS)
-	@echo "Build thành công! Kích thước file:"
+# Liên kết các file .o từ thư mục build/ để tạo file thực thi
+$(TARGET): $(OBJS)
+	@echo "--------------------------------------------------"
+	@echo "⚡ Đang liên kết các đối tượng trong $(OBJ_DIR)/..."
+	$(TARGET_CXX) $(OBJS) -o $@ $(LDFLAGS)
+	@echo "✅ Build thành công: $(TARGET)"
 	@ls -lh $(TARGET)
 
-# 7. QUY TẮC KIỂM TRA (Đã cập nhật để dùng TARGET_CXX)
-check-modbus:
-	@echo "--- Kiểm tra libmodbus ---"
-	@echo "Compiler: $(TARGET_CXX)"
-	@echo "Header path: $(MODBUS_INCLUDE)"
-	@echo "Library path: $(MODBUS_LIB)"
-	@if [ -f $(MODBUS_LIB) ]; then echo "✓ Tìm thấy libmodbus.a"; else echo "✗ Không tìm thấy libmodbus.a"; fi
-	@if [ -d $(MODBUS_INCLUDE) ]; then echo "✓ Tìm thấy thư mục include"; else echo "✗ Không tìm thấy thư mục include"; fi
+# Quy tắc biên dịch file .cpp sang .o trong thư mục build/
+$(OBJ_DIR)/%.o: %.cpp
+	@mkdir -p $(dir $@)
+	@echo "🔨 Biên dịch C++: $<"
+	$(TARGET_CXX) $(CXXFLAGS) -c $< -o $@
 
-# 8. QUY TẮC DỌN DẸP
+# Quy tắc biên dịch file .c sang .o trong thư mục build/
+$(OBJ_DIR)/%.o: %.c
+	@mkdir -p $(dir $@)
+	@echo "🔨 Biên dịch C: $<"
+	$(TARGET_CC) $(CFLAGS) -c $< -o $@
+
+# Dọn dẹp sạch sẽ
 clean:
-	@echo "--- Xóa file biên dịch ---"
-	rm -f $(TARGET)
+	@echo "🧹 Đang dọn dẹp thư mục $(OBJ_DIR) và $(TARGET)..."
+	rm -rf $(OBJ_DIR) $(TARGET)
 
-# 9. COPY LIBMODBUS VÀO PROJECT (chạy 1 lần đầu)
-# Lưu ý: Cần copy các file header và thư viện vào đúng đường dẫn đã định nghĩa ở mục 3.
-setup-libmodbus:
-	@echo "--- Copy libmodbus vào project ---"
-	mkdir -p $(dir $(MODBUS_INCLUDE)) # Tạo thư mục cho include
-	mkdir -p $(dir $(MODBUS_LIB))     # Tạo thư mục cho lib
-	@echo "Hãy copy file từ:"
-	@echo "  Header: từ /path/to/libmodbus/install/include/modbus/* vào $(MODBUS_INCLUDE)/"
-	@echo "  Library: từ /path/to/libmodbus/install/lib/libmodbus.a vào $(MODBUS_LIB)"
-	@echo "Sau đó chạy: make check-modbus"
+.PHONY: all clean
