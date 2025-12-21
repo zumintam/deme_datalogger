@@ -44,44 +44,54 @@ Hệ thống được xây dựng theo mô hình **Microservices** gồm 3 lớp
 ```
 project-root/
 │
-├── drivers/                     
+├── libs/                        ← Nơi lưu trữ các file thư viện tĩnh (.a)
+│   ├── libprotocol.a            ← Ví dụ: thư viện giao thức
+│   └── libdriver_sdk.a          ← Ví dụ: thư viện SDK của hãng
+│
+├── include/                     ← Nơi chứa file header (.h) để code C/C++ gọi được
+│   ├── protocol.h
+│   └── driver_sdk.h
+│
+├── drivers/                     ← (C++ hoặc Python Wrapper) sử dụng thư viện trên
+│   ├── CMakeLists.txt           ← [MỚI] File cấu hình link thư viện .a vào driver
 │   ├── inverter_driver/
 │   ├── meter_driver/
-│   └── <new_device>_driver/        ← Thêm device mới tại đây
+│   └── <new_device>_driver/
 │
-├── processor/
+├── processor/                   
 │   ├── core/
 │   │   ├── processor_main.py
 │   │   ├── state_manager.py
 │   │   ├── command_router.py
 │   │   └── zmq_bus.py
-│   │
 │   ├── plugins/
 │   │   ├── inverter/
 │   │   ├── meter/
-│   │   └── <new_device>/            ← Thêm plugin mới tại đây
+│   │   └── <new_device>/
 │   │       ├── plugin.py
 │   │       └── mapping.json
-│   │
-│   ├── configs/
-│   │   ├── system.json
-│   │   ├── devices.json
-│   │   └── cloud.json
+│   └── configs/
+│       ├── system.json
+│       ├── devices.json
+│       └── cloud.json
 │
-├── bus/
+├── bus/                         
 │   ├── zmq_pubsub.py
 │   ├── zmq_reqrep.py
 │   └── zmq_pushpull.py
 │
-├── cloud-agent/
+├── cloud-agent/                 
 │   ├── agent_main.py
 │   └── queue/
 │
-├── shared/
+├── shared/                      
 │   ├── logger.py
 │   ├── json_utils.py
 │   └── constants.py
 │
+├── docker/
+│
+└── CMakeLists.txt               File build tổng
 └── docker/
 ```
 
@@ -205,15 +215,3 @@ Python Processor sẽ:
 * Docker-friendly, CI/CD dễ dàng
 * Hiệu suất cao (C++ + ZeroMQ)
 * Linh hoạt cho IoT Gateway/Edge Device
-
----
-
-Nếu bạn muốn, tôi có thể tạo luôn:
-
-✅ Bộ **README.md hoàn chỉnh** đúng chuẩn GitHub
-✅ Full template dự án để copy–paste
-✅ Code mẫu C++ Driver
-✅ Code mẫu Python Plugin
-✅ Hệ thống auto-load plugin & auto-topic
-
-Bạn muốn mình tạo bản **README.md hoàn chỉnh** (định dạng đẹp, có table of contents) hay tiếp tục mở rộng phần nào?

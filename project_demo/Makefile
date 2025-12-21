@@ -1,73 +1,57 @@
 # ==============================================================================
-# 1. ĐỊNH NGHĨA TOOLCHAIN VÀ ĐƯỜNG DẪN
+# Makefile chuẩn cho RK3506 - Sửa lỗi Compiler và Path
 # ==============================================================================
 
-# Toolchain cho RK3506 ARM
-SDK_PATH    = /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin
-CROSS_COMPILE = $(SDK_PATH)/arm-none-linux-gnueabihf-
-TARGET_CXX  = $(CROSS_COMPILE)g++
-TARGET_CC   = $(CROSS_COMPILE)gcc
+# 1. TOOLCHAIN (Lấy từ biến môi trường RK_SDK_BASE bạn đã source)
+# RK_SDK_BASE      ?= /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1
+TOOLCHAIN_BIN  = $(RK_SDK_BASE)/prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin
+CROSS_COMPILE  = $(TOOLCHAIN_BIN)/arm-none-linux-gnueabihf-
+CXX            = $(CROSS_COMPILE)g++
+CC             = $(CROSS_COMPILE)gcc
 
-# Tên file thực thi cuối cùng
-TARGET      = hello_modbus_rtu_cpp
+# 2. ĐƯỜNG DẪN THƯ VIỆN MODBUS (Đã sửa lại theo ls của bạn)
+MODBUS_DIR     = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/libmodbus/build/install
+MODBUS_INC     = $(MODBUS_DIR)/include/modbus
+MODBUS_LIB     = $(MODBUS_DIR)/lib/libmodbus.a
 
-# Thư mục chứa các file biên dịch tạm (.o) - Đây là "Recipe" để không bị rối mắt
-OBJ_DIR     = build
+# 3. CẤU TRÚC THƯ MỤC NGUỒN (Đã sửa tên meter_driver)
+OBJ_DIR        = build
+DRV_DIR        = drivers/meter_driver
+CJSON_DIR      = components/libcjson
 
-# Các thư mục chứa mã nguồn
-DRIVER_DIR  = drivers/meter_driver
-CJSON_DIR   = components/libcjson
+# 4. FLAGS BIÊN DỊCH
+CXXFLAGS       = -Wall -std=c++11 -O2 -I$(MODBUS_INC) -I$(DRV_DIR) -I$(CJSON_DIR) -I. -D_GNU_SOURCE
+LDFLAGS        = -lm $(MODBUS_LIB) -static -lpthread
 
-# Thư viện Libmodbus
-MODBUS_INC  = ../libmodbus/build/include/modbus
-MODBUS_LIB  = ../libmodbus/build/lib/libmodbus.a
+# 5. DANH SÁCH FILE NGUỒN
+TARGET         = hello_modbus_rtu_cpp
+SRCS_CPP       = main.cpp $(DRV_DIR)/meter_driver.cpp $(DRV_DIR)/meter_config.cpp
+SRCS_C         = $(CJSON_DIR)/cJSON.c
 
-# ==============================================================================
-# 2. FILE NGUỒN VÀ FLAGS
-# ==============================================================================
+# Chuyển đổi .cpp/.c thành .o trong thư mục build
+OBJS           = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRCS_CPP)) \
+                 $(patsubst %.c,$(OBJ_DIR)/%.o,$(SRCS_C))
 
-# Danh sách file CPP và C
-SRCS_CPP    = main.cpp $(DRIVER_DIR)/meter_driver.cpp $(DRIVER_DIR)/meter_config.cpp
-SRCS_C      = $(CJSON_DIR)/cJSON.c
-
-# Tự động tạo danh sách file .o nằm trong thư mục OBJ_DIR
-# Ví dụ: main.cpp -> build/main.o, drivers/xxx.cpp -> build/drivers/xxx.o
-OBJS        = $(SRCS_CPP:%.cpp=$(OBJ_DIR)/%.o) $(SRCS_C:%.c=$(OBJ_DIR)/%.o)
-
-# Cờ biên dịch
-CXXFLAGS    = -Wall -std=c++11 -O2 -I$(MODBUS_INC) -I$(DRIVER_DIR) -I$(CJSON_DIR) -D_GNU_SOURCE
-CFLAGS      = -Wall -O2 -I$(MODBUS_INC) -I$(CJSON_DIR) -D_GNU_SOURCE
-LDFLAGS     = -lm $(MODBUS_LIB) -static -lpthread
-
-# ==============================================================================
-# 3. QUY TẮC BIÊN DỊCH (RECIPIES)
-# ==============================================================================
-
+# 6. QUY TẮC BIÊN DỊCH
 all: $(TARGET)
 
-# Liên kết các file .o từ thư mục build/ để tạo file thực thi
 $(TARGET): $(OBJS)
-	@echo "--------------------------------------------------"
-	@echo "⚡ Đang liên kết các đối tượng trong $(OBJ_DIR)/..."
-	$(TARGET_CXX) $(OBJS) -o $@ $(LDFLAGS)
-	@echo "✅ Build thành công: $(TARGET)"
-	@ls -lh $(TARGET)
+	@echo "⚡ Linker: $@"
+	$(CXX) $(OBJS) -o $@ $(LDFLAGS)
+	@echo "✅ Thành công!"
 
-# Quy tắc biên dịch file .cpp sang .o trong thư mục build/
+# QUAN TRỌNG: Sửa lỗi thiếu $(CXX) ở đây
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(dir $@)
 	@echo "🔨 Biên dịch C++: $<"
-	$(TARGET_CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-# Quy tắc biên dịch file .c sang .o trong thư mục build/
 $(OBJ_DIR)/%.o: %.c
 	@mkdir -p $(dir $@)
 	@echo "🔨 Biên dịch C: $<"
-	$(TARGET_CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CXXFLAGS) -c $< -o $@
 
-# Dọn dẹp sạch sẽ
 clean:
-	@echo "🧹 Đang dọn dẹp thư mục $(OBJ_DIR) và $(TARGET)..."
 	rm -rf $(OBJ_DIR) $(TARGET)
 
 .PHONY: all clean

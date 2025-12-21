@@ -1,0 +1,1 @@
+/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++ CMakeFiles/main.dir/main.cpp.o -o main  /mnt/shared/SDK_rk3506/hello/libzmq/build/lib/libzmq.a -lpthread -lrt -ldl 

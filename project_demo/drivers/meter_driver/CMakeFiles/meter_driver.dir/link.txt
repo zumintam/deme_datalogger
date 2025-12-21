@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmeter_driver.a CMakeFiles/meter_driver.dir/src/meter_config.cpp.o CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o
+/usr/bin/ranlib libmeter_driver.a
