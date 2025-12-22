@@ -8,7 +8,7 @@
 #include <thread>
 
 #include "meter_driver.h"
-#include "zmq.h"  // Thư viện bạn vừa build
+#include "zmq.h"
 
 using namespace std;
 

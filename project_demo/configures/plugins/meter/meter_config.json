@@ -3,11 +3,11 @@
     "serial_port": "/dev/ttyS3",
     "baudrate": 9600,
     "slave_id": 1,
-    "poll_interval_ms": 300,
+    "poll_interval_ms": 1000,
     "registers": {
         "voltage_L1": {
-            "address": 4000,
-            "scale": 0.1,
+            "address": 4012,
+            "scale": 1,
             "quantity": 1
         }
     }
