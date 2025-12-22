@@ -70,13 +70,19 @@ File này ánh xạ địa chỉ Modbus với tên biến thực tế dựa trê
 JSON
 
 {
-  "poll_interval_ms": 1000,
-  "registers": [
-    { "address": 30023, "name": "total_active_power", "gain": 0.001, "type": "U32" },
-    { "address": 40003, "name": "active_power_limit", "gain": 1000, "type": "U16" }
-  ]
+    "device_id": "1",
+    "serial_port": "/dev/ttyS3",
+    "baudrate": 9600,
+    "slave_id": 1,
+    "poll_interval_ms": 1000,
+    "registers": {
+        "voltage_L1": {
+            "address": 4012,
+            "scale": 1,
+            "quantity": 1
+        }
+    }
 }
-
 ⚠️ Lưu ý vận hành
 
     Zero Export: Khi triển khai Zero Export, hãy đảm bảo chu kỳ quét (Polling) dưới 1000ms để phản ứng kịp thời với thay đổi tải.
