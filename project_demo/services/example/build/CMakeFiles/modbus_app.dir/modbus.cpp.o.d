@@ -205,17 +205,12 @@ CMakeFiles/modbus_app.dir/modbus.cpp.o: \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/atomic_base.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/atomic_lockfree_defines.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/backward/auto_ptr.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/sstream \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/sstream.tcc \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/thread \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/std_thread.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/this_thread_sleep.h \
- /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/../../drivers/meter_driver/meter_config.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/map \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_tree.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_map.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_multimap.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/erase_if.h \
- /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/../../drivers/meter_driver/../../components/libcjson/cJSON.h \
- /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/../../drivers/meter_driver/meter_driver.h \
+ /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/include/meter_driver.h \
  /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/include/modbus/modbus.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/sys/param.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed/limits.h \
@@ -266,6 +261,14 @@ CMakeFiles/modbus_app.dir/modbus.cpp.o: \
  /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/include/modbus/modbus-rtu.h \
  /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/include/modbus/modbus.h \
  /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/include/modbus/modbus-tcp.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/map \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_tree.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_map.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_multimap.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/erase_if.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/mutex \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/std_mutex.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/unique_lock.h
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/unique_lock.h \
+ /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/include/meter_config.h \
+ /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/include/../../../components/libcjson/cJSON.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/zmq.h

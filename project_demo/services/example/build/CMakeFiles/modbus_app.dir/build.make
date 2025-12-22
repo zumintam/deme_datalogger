@@ -73,15 +73,15 @@ CMakeFiles/modbus_app.dir/modbus.cpp.o: CMakeFiles/modbus_app.dir/flags.make
 CMakeFiles/modbus_app.dir/modbus.cpp.o: /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/modbus.cpp
 CMakeFiles/modbus_app.dir/modbus.cpp.o: CMakeFiles/modbus_app.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/shared/SDK_rk3506/task_12/project_demo/services/example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/modbus_app.dir/modbus.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modbus_app.dir/modbus.cpp.o -MF CMakeFiles/modbus_app.dir/modbus.cpp.o.d -o CMakeFiles/modbus_app.dir/modbus.cpp.o -c /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/modbus.cpp
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modbus_app.dir/modbus.cpp.o -MF CMakeFiles/modbus_app.dir/modbus.cpp.o.d -o CMakeFiles/modbus_app.dir/modbus.cpp.o -c /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/modbus.cpp
 
 CMakeFiles/modbus_app.dir/modbus.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modbus_app.dir/modbus.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/modbus.cpp > CMakeFiles/modbus_app.dir/modbus.cpp.i
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/modbus.cpp > CMakeFiles/modbus_app.dir/modbus.cpp.i
 
 CMakeFiles/modbus_app.dir/modbus.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modbus_app.dir/modbus.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/modbus.cpp -o CMakeFiles/modbus_app.dir/modbus.cpp.s
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/modbus.cpp -o CMakeFiles/modbus_app.dir/modbus.cpp.s
 
 # Object files for target modbus_app
 modbus_app_OBJECTS = \
@@ -92,7 +92,10 @@ modbus_app_EXTERNAL_OBJECTS =
 
 modbus_app: CMakeFiles/modbus_app.dir/modbus.cpp.o
 modbus_app: CMakeFiles/modbus_app.dir/build.make
+modbus_app: /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/libmeter_driver.a
 modbus_app: /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/libmodbus.a
+modbus_app: /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/libzmq.a
+modbus_app: /mnt/shared/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/libcjson.a
 modbus_app: CMakeFiles/modbus_app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/shared/SDK_rk3506/task_12/project_demo/services/example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable modbus_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/modbus_app.dir/link.txt --verbose=$(VERBOSE)

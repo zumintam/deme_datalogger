@@ -1,0 +1,3 @@
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles/meter_driver.dir
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles/edit_cache.dir
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles/rebuild_cache.dir

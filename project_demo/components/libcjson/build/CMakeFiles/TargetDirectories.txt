@@ -1,0 +1,3 @@
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/libcjson/build/CMakeFiles/cjson.dir
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/libcjson/build/CMakeFiles/edit_cache.dir
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/libcjson/build/CMakeFiles/rebuild_cache.dir

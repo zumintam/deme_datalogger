@@ -5,9 +5,11 @@
 #include <map>
 #include <string>
 
-extern "C" {
-#include "../../../components/libcjson/cJSON.h"
-}
+#include "cJSON.h"
+
+// extern "C" {
+// #include "../../../components/libcjson/cJSON.h"
+// }
 
 struct RegisterConfig {
   std::string name;
