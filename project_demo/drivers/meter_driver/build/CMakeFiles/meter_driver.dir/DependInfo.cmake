@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp" "CMakeFiles/meter_driver.dir/src/meter_config.cpp.o" "gcc" "CMakeFiles/meter_driver.dir/src/meter_config.cpp.o.d"
-  "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_driver.cpp" "CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o" "gcc" "CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o.d"
+  "/mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp" "CMakeFiles/meter_driver.dir/src/meter_config.cpp.o" "gcc" "CMakeFiles/meter_driver.dir/src/meter_config.cpp.o.d"
+  "/mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_driver.cpp" "CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o" "gcc" "CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

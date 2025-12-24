@@ -25,13 +25,22 @@ project(libcjson_project)
 # Đường dẫn nơi bạn muốn nhả file .a ra (Dùng chung với meter_driver)
 set(DIST_LIBS_DIR "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs")
 
+include_directories(
+    include
+    "${DIST_LIBS_DIR}/include"
+)
+
 # ============================================================
 # 3. TẠO THƯ VIỆN STATIC (libcjson.a)
 # ============================================================
 add_library(cjson STATIC cJSON.c)
 
 # Chỉ định include hiện tại để khi build nó tìm thấy cJSON.h
-target_include_directories(cjson PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(meter_driver
+    PRIVATE
+    "${DIST_LIBS_DIR}/lib/libcjson.a"
+    # các thư viện khác như modbus, zmq...
+)
 
 # (Tùy chọn) cJSON đôi khi cần lib math (-lm), nhưng ở bước tạo .a thì chưa cần link.
 

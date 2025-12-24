@@ -315,7 +315,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/example
+CMAKE_HOME_DIRECTORY:INTERNAL=/mnt/shared/SDK_rk3506/task_12/project_demo/services/example
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

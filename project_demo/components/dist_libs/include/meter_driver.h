@@ -49,4 +49,14 @@ class MeterDriver {
 
   // Xử lý chuyển đổi địa chỉ
   std::uint16_t getModbusAddress(std::uint16_t register_address) const;
+  // ham khoi tao modbus context theo kieu tcp hoac udp
+  bool creatCtx(uint8_t port);
+  bool creatCtx(uint16_t port, uint32_t ip);
+
+  // ham tuong tac
+  int begin(void);
+  void setSlaveId(uint8_t slaveId);
+  void close();
+  // ham tuong tac voi thanh ghi
+  
 };
