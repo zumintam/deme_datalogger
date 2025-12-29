@@ -1,6 +1,7 @@
 #pragma once
 
 #include <modbus/modbus.h>
+#include <string.h>
 
 #include <cstdint>
 #include <memory>

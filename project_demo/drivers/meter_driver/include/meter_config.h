@@ -1,50 +1,46 @@
 #pragma once
 
 #include <cstdint>
+#include <fstream>
 #include <iostream>
 #include <map>
+#include <sstream>
 #include <string>
+#include <vector>
 
 extern "C" {
 #include "../../../components/libcjson/cJSON.h"
 }
 
-struct RegisterConfig {
+// Cấu trúc cho mảng mapping
+struct RegisterMapping {
   std::string name;
   std::uint16_t address;
-  double scale;
-  // viet them cac truong can thiet o day, neu muon cau hinh them tham so cho
-  // moi register
+  std::string type;
+};
+
+// Cấu trúc cho thông số Modbus tập trung
+struct ModbusConfig {
+  uint16_t start_address;
+  uint16_t quantity;
+  int function_code;
+  std::string byte_order;
 };
 
 class MeterConfig {
  public:
-  std::string device_id;
-  std::string serial_port;
-  int baudrate;
-  int slave_id;
-  int poll_interval_ms;
-  std::map<std::string, RegisterConfig> registers;
+  std::string device_model;
+  uint8_t slave_id = 1;
+  ModbusConfig modbus;
+  std::vector<RegisterMapping> mappings;
 
-  bool loadFromJson(const std::string& filename);
+  bool loadFromJson(const std::string& json_content);
 
-  bool validate() const {
-    if (slave_id < 1 || slave_id > 247) {
-      std::cerr << "[VALIDATION FAIL] Slave ID (" << slave_id
-                << ") phai trong khoang [1, 247]." << std::endl;
-      return false;
-    }
-    if (baudrate <= 0) {
-      std::cerr << "[VALIDATION FAIL] Baudrate phai la so duong." << std::endl;
-      return false;
-    }
-    if (registers.empty()) {
-      std::cerr << "[VALIDATION FAIL] Khong co thanh ghi nao duoc cau hinh."
-                << std::endl;
-      return false;
-    }
-    return true;
-  }
+  bool validate() const;
+
+  bool parseRaw2Map(const uint16_t* raw_data,
+                    std::map<std::string, double>& output_map) const;
+  std::string parse2Json(const std::uint16_t* raw_data) const;
 };
 
 std::string readFileToString(const std::string& filename);

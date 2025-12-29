@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master
+CMAKE_SOURCE_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master/build
+CMAKE_BINARY_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,48 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mb_master
+# Target rules for targets named modbus_test
 
 # Build rule for target.
-mb_master: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mb_master
-.PHONY : mb_master
+modbus_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modbus_test
+.PHONY : modbus_test
 
 # fast build rule for target.
-mb_master/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/build
-.PHONY : mb_master/fast
-
-example.o: example.cpp.o
-.PHONY : example.o
-
-# target to build an object file
-example.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/example.cpp.o
-.PHONY : example.cpp.o
-
-example.i: example.cpp.i
-.PHONY : example.i
-
-# target to preprocess a source file
-example.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/example.cpp.i
-.PHONY : example.cpp.i
-
-example.s: example.cpp.s
-.PHONY : example.s
-
-# target to generate assembly for a file
-example.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/example.cpp.s
-.PHONY : example.cpp.s
+modbus_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/build
+.PHONY : modbus_test/fast
 
 mb_master.o: mb_master.cpp.o
 .PHONY : mb_master.o
 
 # target to build an object file
 mb_master.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/mb_master.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/mb_master.cpp.o
 .PHONY : mb_master.cpp.o
 
 mb_master.i: mb_master.cpp.i
@@ -166,7 +142,7 @@ mb_master.i: mb_master.cpp.i
 
 # target to preprocess a source file
 mb_master.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/mb_master.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/mb_master.cpp.i
 .PHONY : mb_master.cpp.i
 
 mb_master.s: mb_master.cpp.s
@@ -174,8 +150,56 @@ mb_master.s: mb_master.cpp.s
 
 # target to generate assembly for a file
 mb_master.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/mb_master.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/mb_master.cpp.s
 .PHONY : mb_master.cpp.s
+
+modbus_ex.o: modbus_ex.cpp.o
+.PHONY : modbus_ex.o
+
+# target to build an object file
+modbus_ex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_ex.cpp.o
+.PHONY : modbus_ex.cpp.o
+
+modbus_ex.i: modbus_ex.cpp.i
+.PHONY : modbus_ex.i
+
+# target to preprocess a source file
+modbus_ex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_ex.cpp.i
+.PHONY : modbus_ex.cpp.i
+
+modbus_ex.s: modbus_ex.cpp.s
+.PHONY : modbus_ex.s
+
+# target to generate assembly for a file
+modbus_ex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_ex.cpp.s
+.PHONY : modbus_ex.cpp.s
+
+modbus_test.o: modbus_test.cpp.o
+.PHONY : modbus_test.o
+
+# target to build an object file
+modbus_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_test.cpp.o
+.PHONY : modbus_test.cpp.o
+
+modbus_test.i: modbus_test.cpp.i
+.PHONY : modbus_test.i
+
+# target to preprocess a source file
+modbus_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_test.cpp.i
+.PHONY : modbus_test.cpp.i
+
+modbus_test.s: modbus_test.cpp.s
+.PHONY : modbus_test.s
+
+# target to generate assembly for a file
+modbus_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_test.cpp.s
+.PHONY : modbus_test.cpp.s
 
 # Help Target
 help:
@@ -185,13 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mb_master"
-	@echo "... example.o"
-	@echo "... example.i"
-	@echo "... example.s"
+	@echo "... modbus_test"
 	@echo "... mb_master.o"
 	@echo "... mb_master.i"
 	@echo "... mb_master.s"
+	@echo "... modbus_ex.o"
+	@echo "... modbus_ex.i"
+	@echo "... modbus_ex.s"
+	@echo "... modbus_test.o"
+	@echo "... modbus_test.i"
+	@echo "... modbus_test.s"
 .PHONY : help
 
 

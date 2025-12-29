@@ -30,7 +30,7 @@ set(DIST_LIBS_DIR "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/c
 # ============================================================
 add_library(meter_driver STATIC
     src/meter_config.cpp
-    src/meter_driver.cpp
+    # src/meter_driver.cpp
 )
 
 target_compile_features(meter_driver PUBLIC cxx_std_11)
