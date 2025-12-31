@@ -64,7 +64,6 @@ int main() {
         std::cout << "Data sent successfully" << std::endl;
       }
 
-      // Wait before next read (e.g., 1 second interval)
       std::this_thread::sleep_for(std::chrono::seconds(1));
       std::cout << "----------------------------------------" << std::endl;
     }

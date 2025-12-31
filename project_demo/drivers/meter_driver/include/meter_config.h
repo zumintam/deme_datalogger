@@ -19,7 +19,7 @@ struct RegisterMapping {
   std::string type;
 };
 
-// Cấu trúc cho thông số Modbus tập trung
+// Cấu trúc cho thông số Modbus
 struct ModbusConfig {
   uint16_t start_address;
   uint16_t quantity;
