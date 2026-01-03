@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver
+CMAKE_SOURCE_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build
+CMAKE_BINARY_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/meter_driver.dir/depend.make
@@ -70,52 +70,36 @@ include CMakeFiles/meter_driver.dir/progress.make
 include CMakeFiles/meter_driver.dir/flags.make
 
 CMakeFiles/meter_driver.dir/src/meter_config.cpp.o: CMakeFiles/meter_driver.dir/flags.make
-CMakeFiles/meter_driver.dir/src/meter_config.cpp.o: /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp
+CMakeFiles/meter_driver.dir/src/meter_config.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp
 CMakeFiles/meter_driver.dir/src/meter_config.cpp.o: CMakeFiles/meter_driver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/meter_driver.dir/src/meter_config.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meter_driver.dir/src/meter_config.cpp.o -MF CMakeFiles/meter_driver.dir/src/meter_config.cpp.o.d -o CMakeFiles/meter_driver.dir/src/meter_config.cpp.o -c /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/meter_driver.dir/src/meter_config.cpp.o"
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meter_driver.dir/src/meter_config.cpp.o -MF CMakeFiles/meter_driver.dir/src/meter_config.cpp.o.d -o CMakeFiles/meter_driver.dir/src/meter_config.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp
 
 CMakeFiles/meter_driver.dir/src/meter_config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meter_driver.dir/src/meter_config.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp > CMakeFiles/meter_driver.dir/src/meter_config.cpp.i
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp > CMakeFiles/meter_driver.dir/src/meter_config.cpp.i
 
 CMakeFiles/meter_driver.dir/src/meter_config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meter_driver.dir/src/meter_config.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp -o CMakeFiles/meter_driver.dir/src/meter_config.cpp.s
-
-CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o: CMakeFiles/meter_driver.dir/flags.make
-CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o: /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_driver.cpp
-CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o: CMakeFiles/meter_driver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o -MF CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o.d -o CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o -c /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_driver.cpp
-
-CMakeFiles/meter_driver.dir/src/meter_driver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/meter_driver.dir/src/meter_driver.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_driver.cpp > CMakeFiles/meter_driver.dir/src/meter_driver.cpp.i
-
-CMakeFiles/meter_driver.dir/src/meter_driver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/meter_driver.dir/src/meter_driver.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_driver.cpp -o CMakeFiles/meter_driver.dir/src/meter_driver.cpp.s
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp -o CMakeFiles/meter_driver.dir/src/meter_config.cpp.s
 
 # Object files for target meter_driver
 meter_driver_OBJECTS = \
-"CMakeFiles/meter_driver.dir/src/meter_config.cpp.o" \
-"CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o"
+"CMakeFiles/meter_driver.dir/src/meter_config.cpp.o"
 
 # External object files for target meter_driver
 meter_driver_EXTERNAL_OBJECTS =
 
 libmeter_driver.a: CMakeFiles/meter_driver.dir/src/meter_config.cpp.o
-libmeter_driver.a: CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o
 libmeter_driver.a: CMakeFiles/meter_driver.dir/build.make
 libmeter_driver.a: CMakeFiles/meter_driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libmeter_driver.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmeter_driver.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/meter_driver.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/meter_driver.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Deploying meter_driver to dist_libs..."
 	/usr/bin/cmake -E echo ---\ Deploying\ ARM\ library\ to\ project_demo\ ---
-	/usr/bin/cmake -E copy /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/libmeter_driver.a /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/
-	/usr/bin/cmake -E copy_directory /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/include /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs/include
+	/usr/bin/cmake -E copy /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/libmeter_driver.a /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/
+	/usr/bin/cmake -E copy_directory /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/include /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs/include
 
 # Rule to build all files generated by this target.
 CMakeFiles/meter_driver.dir/build: libmeter_driver.a
@@ -126,6 +110,6 @@ CMakeFiles/meter_driver.dir/clean:
 .PHONY : CMakeFiles/meter_driver.dir/clean
 
 CMakeFiles/meter_driver.dir/depend:
-	cd /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles/meter_driver.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles/meter_driver.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/meter_driver.dir/depend
 

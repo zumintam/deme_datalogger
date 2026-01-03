@@ -1,8 +1,7 @@
 #include "mb_master.h"
 
 ModbusContextPtr ModbusMaster::create_rtu_ctx(const uint8_t port) {
-  modbus_t* ctx = modbus_new_rtu((port == 1) ? "/dev/ttyS3" : "/dev/ttyS4",
-                                 9600, 'N', 8, 1);
+  modbus_t* ctx = modbus_new_rtu("/dev/ttyS3", 9600, 'N', 8, 1);
 
   return ModbusContextPtr(ctx);
 }

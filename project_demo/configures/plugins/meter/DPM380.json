@@ -1,0 +1,46 @@
+{
+  "device_model": "DPM380",
+  "slave_id": 1,
+  "modbus_config": {
+    "start_address": 4000,
+    "quantity": 89,
+    "function_code": 3,
+    "byte_order": "big_endian"
+  },
+  "mapping": [
+    { "address": 4000, "name": "Negative_Real_Energy", "type": "u32" },
+    { "address": 4002, "name": "Positive_Real_Energy", "type": "u32" },
+    { "address": 4006, "name": "Apparent_Energy", "type": "u32" },
+    { "address": 4008, "name": "Negative_Reactive_Energy", "type": "u32" },
+    { "address": 4010, "name": "Positive_Reactive_Energy", "type": "u32" },
+    { "address": 4012, "name": "Total_active_power", "type": "i32" },
+    { "address": 4014, "name": "Total_apparent_power", "type": "u32" },
+    { "address": 4016, "name": "Total_reactive_power", "type": "i32" },
+    { "address": 4018, "name": "Total_power_factor", "type": "u16" },
+    { "address": 4019, "name": "Frequency", "type": "u16" },
+    { "address": 4020, "name": "Current_L1", "type": "u32" },
+    { "address": 4022, "name": "Current_L2", "type": "u32" },
+    { "address": 4024, "name": "Current_L3", "type": "u32" },
+    { "address": 4026, "name": "Current_Ln", "type": "u32" },
+    { "address": 4028, "name": "Voltage_L1-L2", "type": "u32" },
+    { "address": 4030, "name": "Voltage_L2-L3", "type": "u32" },
+    { "address": 4032, "name": "Voltage_L3-L1", "type": "u32" },
+    { "address": 4034, "name": "Voltage_L1", "type": "u32" },
+    { "address": 4036, "name": "Voltage_L2", "type": "u32" },
+    { "address": 4038, "name": "Voltage_L3", "type": "u32" },
+    { "address": 4040, "name": "Real_Power_L1", "type": "i32" },
+    { "address": 4042, "name": "Real_Power_L2", "type": "i32" },
+    { "address": 4044, "name": "Real_Power_L3", "type": "i32" },
+    { "address": 4052, "name": "Reactive_Power_L1", "type": "i32" },
+    { "address": 4054, "name": "Reactive_Power_L2", "type": "i32" },
+    { "address": 4056, "name": "Reactive_Power_L3", "type": "i32" },
+    { "address": 4082, "name": "THD_Current_L1", "type": "u16" },
+    { "address": 4083, "name": "THD_Current_L2", "type": "u16" },
+    { "address": 4084, "name": "THD_Current_L3", "type": "u16" },
+    { "address": 4085, "name": "THD_Voltage_L1", "type": "u16" },
+    { "address": 4086, "name": "THD_Voltage_L2", "type": "u16" },
+    { "address": 4087, "name": "THD_Voltage_L3", "type": "u16" },
+    { "address": 4088, "name": "Energy_Full_Flag", "type": "u16" }
+  ]
+}
+

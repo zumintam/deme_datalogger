@@ -1,0 +1,486 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The target system is: Linux -  - arm
+      The host system is: Linux - 6.14.0-37-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-I0GSzR"
+      binary: "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-I0GSzR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-I0GSzR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_33110/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_33110.dir/build.make CMakeFiles/cmTC_33110.dir/build
+        gmake[1]: Entering directory '/mnt/shared/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-I0GSzR'
+        Building C object CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o
+        /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc   -v -o CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc.br_real
+        Target: arm-buildroot-linux-gnueabihf
+        Configured with: ./configure --prefix=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --sysconfdir=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpc=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpfr=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-pkgversion='Buildroot 2024.02' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.4.0 (Buildroot 2024.02) 
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_33110.dir/'
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/cc1 -quiet -v -isysroot /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_33110.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4 -mabi=aapcs-linux -mtls-dialect=gnu -marm -mlibarch=armv7ve+simd -march=armv7ve+simd -version -fstack-protector-strong -fPIE -o /tmp/cctAGdVs.s
+        GNU C17 (Buildroot 2024.02) version 12.4.0 (arm-buildroot-linux-gnueabihf)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/local/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include
+        End of search list.
+        GNU C17 (Buildroot 2024.02) version 12.4.0 (arm-buildroot-linux-gnueabihf)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 02357c9983ab8ee1755386d986addf0f
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_33110.dir/'
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/as -v -march=armv7ve+simd -mfloat-abi=hard -mfpu=neon-vfpv4 -meabi=5 -o CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o /tmp/cctAGdVs.s
+        GNU assembler version 2.40 (arm-buildroot-linux-gnueabihf) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/
+        LIBRARY_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_33110
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33110.dir/link.txt --verbose=1
+        /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc  -v CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o -o cmTC_33110 
+        Using built-in specs.
+        COLLECT_GCC=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc.br_real
+        COLLECT_LTO_WRAPPER=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper
+        Target: arm-buildroot-linux-gnueabihf
+        Configured with: ./configure --prefix=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --sysconfdir=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpc=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpfr=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-pkgversion='Buildroot 2024.02' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.4.0 (Buildroot 2024.02) 
+        COMPILER_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/
+        LIBRARY_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'cmTC_33110' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'cmTC_33110.'
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/collect2 -plugin /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/liblto_plugin.so -plugin-opt=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsLBP43.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_33110 /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0 -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib -z now -z relro CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'cmTC_33110' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'cmTC_33110.'
+        gmake[1]: Leaving directory '/mnt/shared/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-I0GSzR'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include]
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed]
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include]
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include]
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed]
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include]
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+        implicit include dirs: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-buildroot-linux-gnueabihf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-I0GSzR']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_33110/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_33110.dir/build.make CMakeFiles/cmTC_33110.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/shared/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-I0GSzR']
+        ignore line: [Building C object CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc   -v -o CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc.br_real]
+        ignore line: [Target: arm-buildroot-linux-gnueabihf]
+        ignore line: [Configured with: ./configure --prefix=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --sysconfdir=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpc=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpfr=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-pkgversion='Buildroot 2024.02' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.4.0 (Buildroot 2024.02) ]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_33110.dir/']
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/cc1 -quiet -v -isysroot /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_33110.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4 -mabi=aapcs-linux -mtls-dialect=gnu -marm -mlibarch=armv7ve+simd -march=armv7ve+simd -version -fstack-protector-strong -fPIE -o /tmp/cctAGdVs.s]
+        ignore line: [GNU C17 (Buildroot 2024.02) version 12.4.0 (arm-buildroot-linux-gnueabihf)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/local/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Buildroot 2024.02) version 12.4.0 (arm-buildroot-linux-gnueabihf)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 02357c9983ab8ee1755386d986addf0f]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_33110.dir/']
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/as -v -march=armv7ve+simd -mfloat-abi=hard -mfpu=neon-vfpv4 -meabi=5 -o CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o /tmp/cctAGdVs.s]
+        ignore line: [GNU assembler version 2.40 (arm-buildroot-linux-gnueabihf) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/]
+        ignore line: [LIBRARY_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o' '-c' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_33110]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33110.dir/link.txt --verbose=1]
+        ignore line: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc  -v CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o -o cmTC_33110 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc.br_real]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper]
+        ignore line: [Target: arm-buildroot-linux-gnueabihf]
+        ignore line: [Configured with: ./configure --prefix=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --sysconfdir=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpc=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpfr=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-pkgversion='Buildroot 2024.02' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.4.0 (Buildroot 2024.02) ]
+        ignore line: [COMPILER_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/]
+        ignore line: [LIBRARY_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'cmTC_33110' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'cmTC_33110.']
+        link line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/collect2 -plugin /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/liblto_plugin.so -plugin-opt=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsLBP43.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_33110 /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0 -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib -z now -z relro CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o]
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccsLBP43.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-armhf.so.3] ==> ignore
+          arg [-X] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_33110] ==> ignore
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o]
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o]
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o]
+          arg [-L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0] ==> dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0]
+          arg [-L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib] ==> dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib]
+          arg [-L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib] ==> dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib]
+          arg [-L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib] ==> dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [CMakeFiles/cmTC_33110.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o]
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o]
+        collapse library dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0]
+        collapse library dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/lib]
+        collapse library dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib]
+        collapse library dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o]
+        implicit dirs: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/lib;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-1V0ybG"
+      binary: "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-1V0ybG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-1V0ybG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c07fd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c07fd.dir/build.make CMakeFiles/cmTC_c07fd.dir/build
+        gmake[1]: Entering directory '/mnt/shared/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-1V0ybG'
+        Building CXX object CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o
+        /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++   -v -o CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++.br_real
+        Target: arm-buildroot-linux-gnueabihf
+        Configured with: ./configure --prefix=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --sysconfdir=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpc=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpfr=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-pkgversion='Buildroot 2024.02' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.4.0 (Buildroot 2024.02) 
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_c07fd.dir/'
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/cc1plus -quiet -v -isysroot /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c07fd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4 -mabi=aapcs-linux -mtls-dialect=gnu -marm -mlibarch=armv7ve+simd -march=armv7ve+simd -version -fstack-protector-strong -fPIE -o /tmp/cc2djeUN.s
+        GNU C++17 (Buildroot 2024.02) version 12.4.0 (arm-buildroot-linux-gnueabihf)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/local/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0/backward
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include
+        End of search list.
+        GNU C++17 (Buildroot 2024.02) version 12.4.0 (arm-buildroot-linux-gnueabihf)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.1.1, MPC version 1.2.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: e5f5f7740f145df6d59af61a9d21fdea
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_c07fd.dir/'
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/as -v -march=armv7ve+simd -mfloat-abi=hard -mfpu=neon-vfpv4 -meabi=5 -o CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc2djeUN.s
+        GNU assembler version 2.40 (arm-buildroot-linux-gnueabihf) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/
+        LIBRARY_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_c07fd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c07fd.dir/link.txt --verbose=1
+        /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++  -v CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c07fd 
+        Using built-in specs.
+        COLLECT_GCC=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++.br_real
+        COLLECT_LTO_WRAPPER=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper
+        Target: arm-buildroot-linux-gnueabihf
+        Configured with: ./configure --prefix=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --sysconfdir=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpc=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpfr=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-pkgversion='Buildroot 2024.02' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 12.4.0 (Buildroot 2024.02) 
+        COMPILER_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/
+        LIBRARY_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'cmTC_c07fd' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'cmTC_c07fd.'
+         /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/collect2 -plugin /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/liblto_plugin.so -plugin-opt=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSMWmX4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_c07fd /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0 -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib -z now -z relro CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o
+        COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'cmTC_c07fd' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'cmTC_c07fd.'
+        gmake[1]: Leaving directory '/mnt/shared/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-1V0ybG'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0]
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf]
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0/backward]
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include]
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed]
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include]
+          add: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0]
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf]
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0/backward] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/backward]
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include]
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed]
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include]
+        collapse include dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+        implicit include dirs: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/backward;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-buildroot-linux-gnueabihf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-1V0ybG']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c07fd/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c07fd.dir/build.make CMakeFiles/cmTC_c07fd.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/shared/SDK_rk3506/task_12/project_demo/services/readModbus4Config/build/CMakeFiles/CMakeScratch/TryCompile-1V0ybG']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++   -v -o CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++.br_real]
+        ignore line: [Target: arm-buildroot-linux-gnueabihf]
+        ignore line: [Configured with: ./configure --prefix=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --sysconfdir=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpc=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpfr=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-pkgversion='Buildroot 2024.02' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.4.0 (Buildroot 2024.02) ]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_c07fd.dir/']
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/cc1plus -quiet -v -isysroot /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c07fd.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4 -mabi=aapcs-linux -mtls-dialect=gnu -marm -mlibarch=armv7ve+simd -march=armv7ve+simd -version -fstack-protector-strong -fPIE -o /tmp/cc2djeUN.s]
+        ignore line: [GNU C++17 (Buildroot 2024.02) version 12.4.0 (arm-buildroot-linux-gnueabihf)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/local/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include/c++/12.4.0/backward]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/include]
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Buildroot 2024.02) version 12.4.0 (arm-buildroot-linux-gnueabihf)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.1.1  MPC version 1.2.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: e5f5f7740f145df6d59af61a9d21fdea]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_c07fd.dir/']
+        ignore line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/as -v -march=armv7ve+simd -mfloat-abi=hard -mfpu=neon-vfpv4 -meabi=5 -o CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc2djeUN.s]
+        ignore line: [GNU assembler version 2.40 (arm-buildroot-linux-gnueabihf) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/]
+        ignore line: [LIBRARY_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_c07fd]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c07fd.dir/link.txt --verbose=1]
+        ignore line: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++  -v CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c07fd ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++.br_real]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper]
+        ignore line: [Target: arm-buildroot-linux-gnueabihf]
+        ignore line: [Configured with: ./configure --prefix=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --sysconfdir=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/etc --enable-static --target=arm-buildroot-linux-gnueabihf --with-sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --enable-plugins --enable-lto --with-gmp=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpc=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-mpfr=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host --with-pkgversion='Buildroot 2024.02' --with-bugurl=https://gitlab.com/buildroot.org/buildroot/-/issues --without-zstd --disable-libquadmath --disable-libquadmath-support --enable-tls --enable-threads --without-isl --without-cloog --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/bin --enable-shared --disable-libgomp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 12.4.0 (Buildroot 2024.02) ]
+        ignore line: [COMPILER_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/bin/]
+        ignore line: [LIBRARY_PATH=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/:/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot' '-fstack-protector-strong' '-fPIE' '-pie' '-v' '-o' 'cmTC_c07fd' '-shared-libgcc' '-mcpu=cortex-a7' '-mfloat-abi=hard' '-mfpu=neon-vfpv4' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-marm' '-mlibarch=armv7ve+simd' '-march=armv7ve+simd' '-dumpdir' 'cmTC_c07fd.']
+        link line: [ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/collect2 -plugin /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/liblto_plugin.so -plugin-opt=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccSMWmX4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -pie -o cmTC_c07fd /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0 -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib -L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib -z now -z relro CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o]
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/libexec/gcc/arm-buildroot-linux-gnueabihf/12.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccSMWmX4.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-armhf.so.3] ==> ignore
+          arg [-X] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c07fd] ==> ignore
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o]
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o]
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o]
+          arg [-L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0] ==> dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0]
+          arg [-L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib] ==> dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib]
+          arg [-L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib] ==> dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib]
+          arg [-L/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib] ==> dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [CMakeFiles/cmTC_c07fd.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o]
+          arg [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o] ==> obj [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o]
+        collapse library dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0]
+        collapse library dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/../../../../arm-buildroot-linux-gnueabihf/lib] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/lib]
+        collapse library dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib]
+        collapse library dir [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib] ==> [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/Scrt1.o;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crti.o;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtbeginS.o;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/crtendS.o;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib/crtn.o]
+        implicit dirs: [/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/lib;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+...

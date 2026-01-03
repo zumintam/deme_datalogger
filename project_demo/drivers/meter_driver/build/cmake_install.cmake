@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver
+# Install script for directory: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

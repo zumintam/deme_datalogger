@@ -1,7 +1,7 @@
 CMakeFiles/meter_driver.dir/src/meter_config.cpp.o: \
- /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp \
+ /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/meter_config.cpp \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/stdc-predef.h \
- /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/include/meter_config.h \
+ /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/../include/meter_config.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/cstdint \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf/bits/c++config.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf/bits/os_defines.h \
@@ -24,8 +24,8 @@ CMakeFiles/meter_driver.dir/src/meter_config.cpp.o: \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/wchar.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-intn.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/bits/stdint-uintn.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/iostream \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/ostream \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/fstream \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/istream \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/ios \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/iosfwd \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stringfwd.h \
@@ -182,9 +182,14 @@ CMakeFiles/meter_driver.dir/src/meter_config.cpp.o: \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf/bits/ctype_inline.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/locale_facets.tcc \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/basic_ios.tcc \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/ostream \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/ostream.tcc \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/istream \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/istream.tcc \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/codecvt.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf/bits/basic_file.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf/bits/c++io.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/fstream.tcc \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/iostream \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/map \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_tree.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/ext/aligned_buffer.h \
@@ -194,11 +199,11 @@ CMakeFiles/meter_driver.dir/src/meter_config.cpp.o: \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/uses_allocator.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_multimap.h \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/erase_if.h \
- /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/include/../../../components/libcjson/cJSON.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/fstream \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/codecvt.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf/bits/basic_file.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf/bits/c++io.h \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/fstream.tcc \
  /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/sstream \
- /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/sstream.tcc
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/sstream.tcc \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/vector \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_uninitialized.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_vector.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/stl_bvector.h \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/bits/vector.tcc \
+ /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/src/../include/../../../components/libcjson/cJSON.h

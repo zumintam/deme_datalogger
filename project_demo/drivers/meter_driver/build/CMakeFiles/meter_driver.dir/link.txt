@@ -1,2 +1,2 @@
-/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-ar qc libmeter_driver.a CMakeFiles/meter_driver.dir/src/meter_config.cpp.o CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o
+/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-ar qc libmeter_driver.a CMakeFiles/meter_driver.dir/src/meter_config.cpp.o
 /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-ranlib libmeter_driver.a
