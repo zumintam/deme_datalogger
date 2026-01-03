@@ -1,0 +1,3 @@
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/EVN/build/CMakeFiles/EVN_service.dir
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/EVN/build/CMakeFiles/edit_cache.dir
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/EVN/build/CMakeFiles/rebuild_cache.dir

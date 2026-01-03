@@ -112,7 +112,7 @@ class ZMQMQTTBridge:
         """Callback khi MQTT kết nối"""
         if rc == 0:
             logger.info(
-                f"✅ MQTT connected to {self.mqtt_config.broker}:{self.mqtt_config.port}"
+                f"MQTT connected to {self.mqtt_config.broker}:{self.mqtt_config.port}"
             )
             self.mqtt_connected.set()
         else:
@@ -124,7 +124,7 @@ class ZMQMQTTBridge:
                 5: "Not authorized",
             }
             logger.error(
-                f"❌ MQTT connection failed: {error_messages.get(rc, f'Unknown error ({rc})')}"
+                f"MQTT connection failed: {error_messages.get(rc, f'Unknown error ({rc})')}"
             )
             self.mqtt_connected.clear()
 
@@ -133,14 +133,14 @@ class ZMQMQTTBridge:
         self.mqtt_connected.clear()
         if rc != 0:
             logger.warning(
-                f"⚠️  MQTT disconnected unexpectedly (code: {rc}), attempting reconnect..."
+                f"MQTT disconnected unexpectedly (code: {rc}), attempting reconnect..."
             )
             with self.stats_lock:
                 self.stats["mqtt_reconnects"] += 1
 
     def _on_mqtt_publish(self, client, userdata, mid):
         """Callback khi publish thành công"""
-        logger.debug(f"📤 MQTT message {mid} published successfully")
+        logger.debug(f"MQTT message {mid} published successfully")
 
     # ========== INITIALIZATION ==========
     def _init_mqtt(self):
@@ -179,7 +179,7 @@ class ZMQMQTTBridge:
                 raise TimeoutError("MQTT connection timeout")
 
         except Exception as e:
-            logger.error(f"❌ Failed to initialize MQTT: {e}")
+            logger.error(f"Failed to initialize MQTT: {e}")
             raise
 
     def _init_zmq(self):
@@ -197,10 +197,10 @@ class ZMQMQTTBridge:
 
             # Bind
             self.zmq_socket.bind(self.zmq_config.endpoint)
-            logger.info(f"✅ ZMQ ROUTER listening on {self.zmq_config.endpoint}")
+            logger.info(f"ZMQ ROUTER listening on {self.zmq_config.endpoint}")
 
         except Exception as e:
-            logger.error(f"❌ Failed to initialize ZMQ: {e}")
+            logger.error(f"Failed to initialize ZMQ: {e}")
             raise
 
     # ========== MESSAGE PROCESSING ==========
@@ -208,7 +208,7 @@ class ZMQMQTTBridge:
         """Validate ZMQ message format"""
         if len(parts) != 2:
             logger.warning(
-                f"⚠️  Invalid message format (expected 2 parts, got {len(parts)})"
+                f"Invalid message format (expected 2 parts, got {len(parts)})"
             )
             return False
         return True
@@ -226,12 +226,12 @@ class ZMQMQTTBridge:
 
             # Log (có thể parse JSON nếu cần)
             logger.info(
-                f"📥 [ZMQ] Client: {identity.hex()[:8]}... | Data: {message_str[:100]}"
+                f"[ZMQ] Client: {identity.hex()[:8]}... | Data: {message_str[:100]}"
             )
 
             # Đợi MQTT kết nối (nếu đang reconnect)
             if not self.mqtt_connected.wait(timeout=5):
-                logger.error("⚠️  MQTT not connected, dropping message")
+                logger.error("MQTT not connected, dropping message")
                 return False
 
             # Publish to MQTT
@@ -243,19 +243,19 @@ class ZMQMQTTBridge:
             result.wait_for_publish(timeout=2)
 
             if result.rc == mqtt.MQTT_ERR_SUCCESS:
-                logger.info(f"📤 [MQTT] Published to '{self.mqtt_config.topic}'")
+                logger.info(f"[MQTT] Published to '{self.mqtt_config.topic}'")
                 with self.stats_lock:
                     self.stats["messages_sent"] += 1
                 return True
             else:
-                logger.error(f"❌ MQTT publish failed: {result.rc}")
+                logger.error(f"MQTT publish failed: {result.rc}")
                 return False
 
         except UnicodeDecodeError:
-            logger.error("❌ Failed to decode message payload")
+            logger.error("Failed to decode message payload")
             return False
         except Exception as e:
-            logger.error(f"❌ Error processing message: {e}")
+            logger.error(f"Error processing message: {e}")
             return False
 
     # ========== MAIN LOOP ==========
@@ -269,7 +269,7 @@ class ZMQMQTTBridge:
             self.state = ServiceState.RUNNING
             self.stats["start_time"] = time.time()
             logger.info("=" * 60)
-            logger.info("🚀 ZMQ-MQTT Bridge Service is RUNNING")
+            logger.info("ZMQ-MQTT Bridge Service is RUNNING")
             logger.info("=" * 60)
 
             while not self.shutdown_event.is_set():
@@ -298,13 +298,13 @@ class ZMQMQTTBridge:
                     continue
 
                 except Exception as e:
-                    logger.error(f"❌ Error in main loop: {e}")
+                    logger.error(f"Error in main loop: {e}")
                     with self.stats_lock:
                         self.stats["messages_failed"] += 1
                     time.sleep(0.1)  # Tránh tight loop khi lỗi
 
         except Exception as e:
-            logger.critical(f"💥 Fatal error: {e}")
+            logger.critical(f"Fatal error: {e}")
             self.state = ServiceState.ERROR
             raise
         finally:
@@ -313,32 +313,32 @@ class ZMQMQTTBridge:
     # ========== SHUTDOWN & CLEANUP ==========
     def _signal_handler(self, signum, frame):
         """Handle shutdown signals"""
-        logger.info(f"\n⚠️  Received signal {signum}, shutting down gracefully...")
+        logger.info(f"\nReceived signal {signum}, shutting down gracefully...")
         self.shutdown_event.set()
 
     def _cleanup(self):
         """Clean up resources"""
         self.state = ServiceState.STOPPING
-        logger.info("🧹 Cleaning up resources...")
+        logger.info("Cleaning up resources...")
 
         # Stop MQTT
         if self.mqtt_client:
             self.mqtt_client.loop_stop()
             self.mqtt_client.disconnect()
-            logger.info("✅ MQTT client disconnected")
+            logger.info("MQTT client disconnected")
 
         # Close ZMQ
         if self.zmq_socket:
             self.zmq_socket.close()
         if self.zmq_context:
             self.zmq_context.term()
-            logger.info("✅ ZMQ resources released")
+            logger.info("ZMQ resources released")
 
         # Print statistics
         self._print_statistics()
 
         self.state = ServiceState.STOPPED
-        logger.info("👋 Service stopped")
+        logger.info("Service stopped")
 
     def _print_statistics(self):
         """In thống kê hoạt động"""
@@ -350,7 +350,7 @@ class ZMQMQTTBridge:
             )
 
             logger.info("=" * 60)
-            logger.info("📊 SERVICE STATISTICS")
+            logger.info("SERVICE STATISTICS")
             logger.info(f"  Uptime: {uptime:.2f}s")
             logger.info(f"  Messages received: {self.stats['messages_received']}")
             logger.info(f"  Messages sent: {self.stats['messages_sent']}")
@@ -384,9 +384,9 @@ def main():
     try:
         bridge.run()
     except KeyboardInterrupt:
-        logger.info("\n⚠️  Interrupted by user")
+        logger.info("\nInterrupted by user")
     except Exception as e:
-        logger.critical(f"💥 Service crashed: {e}")
+        logger.critical(f"Service crashed: {e}")
         sys.exit(1)
 
 
