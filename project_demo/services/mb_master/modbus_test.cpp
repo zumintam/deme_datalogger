@@ -22,7 +22,7 @@ int main() {
       std::cerr << "Failed to initialize ZMQ dealer" << std::endl;
       cleanupModbus(ctx);
       return EXIT_FAILURE;
-    }
+    }=
 
     std::cout << "Modbus and ZMQ initialized successfully" << std::endl;
 
