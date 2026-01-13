@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver
+CMAKE_SOURCE_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build
+CMAKE_BINARY_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/shared/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/drivers/meter_driver/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,30 +153,6 @@ src/meter_config.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/meter_driver.dir/build.make CMakeFiles/meter_driver.dir/src/meter_config.cpp.s
 .PHONY : src/meter_config.cpp.s
 
-src/meter_driver.o: src/meter_driver.cpp.o
-.PHONY : src/meter_driver.o
-
-# target to build an object file
-src/meter_driver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meter_driver.dir/build.make CMakeFiles/meter_driver.dir/src/meter_driver.cpp.o
-.PHONY : src/meter_driver.cpp.o
-
-src/meter_driver.i: src/meter_driver.cpp.i
-.PHONY : src/meter_driver.i
-
-# target to preprocess a source file
-src/meter_driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meter_driver.dir/build.make CMakeFiles/meter_driver.dir/src/meter_driver.cpp.i
-.PHONY : src/meter_driver.cpp.i
-
-src/meter_driver.s: src/meter_driver.cpp.s
-.PHONY : src/meter_driver.s
-
-# target to generate assembly for a file
-src/meter_driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meter_driver.dir/build.make CMakeFiles/meter_driver.dir/src/meter_driver.cpp.s
-.PHONY : src/meter_driver.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +165,6 @@ help:
 	@echo "... src/meter_config.o"
 	@echo "... src/meter_config.i"
 	@echo "... src/meter_config.s"
-	@echo "... src/meter_driver.o"
-	@echo "... src/meter_driver.i"
-	@echo "... src/meter_driver.s"
 .PHONY : help
 
 

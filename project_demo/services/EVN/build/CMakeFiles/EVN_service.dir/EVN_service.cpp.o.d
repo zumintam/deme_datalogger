@@ -1,0 +1,4 @@
+CMakeFiles/EVN_service.dir/EVN_service.cpp.o: \
+ /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/EVN/EVN_service.cpp \
+ /home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include/stdc-predef.h \
+ /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/EVN/EVN_service.h
