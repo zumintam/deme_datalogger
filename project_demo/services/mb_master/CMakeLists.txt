@@ -7,22 +7,26 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 get_filename_component(PROJECT_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../" ABSOLUTE)
 set(LIBS_DIR "${PROJECT_ROOT}/components/dist_libs")
 
-message(STATUS "🚀 Building MB_MASTER")
-message(STATUS "📂 Linker Path: ${LIBS_DIR}")
+message(STATUS " Building MB_MASTER")
+message(STATUS " Linker Path: ${LIBS_DIR}")
 
 include_directories(
     include
+    
     ${LIBS_DIR}/include
     ${LIBS_DIR}/include/modbus
 )
 
-add_executable(modbus_test 
-    mb_master.cpp
-    modbus_ex.cpp
-    modbus_test.cpp
+add_executable(main
+test_1.cpp
+device_manager/mapping.cpp
+device_manager/device.cpp
+ModbusDeviceManager.cpp
+DeviceConfigurator.cpp
+modbus_port.cpp
 )
 
-target_link_libraries(modbus_test
+target_link_libraries(main
     ${LIBS_DIR}/lib/libmodbus.a
     ${LIBS_DIR}/lib/libmeter_driver.a
     ${LIBS_DIR}/lib/libzmq.a

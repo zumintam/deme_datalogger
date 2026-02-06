@@ -117,89 +117,161 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named modbus_test
+# Target rules for targets named main
 
 # Build rule for target.
-modbus_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modbus_test
-.PHONY : modbus_test
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-modbus_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/build
-.PHONY : modbus_test/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-mb_master.o: mb_master.cpp.o
-.PHONY : mb_master.o
-
-# target to build an object file
-mb_master.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/mb_master.cpp.o
-.PHONY : mb_master.cpp.o
-
-mb_master.i: mb_master.cpp.i
-.PHONY : mb_master.i
-
-# target to preprocess a source file
-mb_master.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/mb_master.cpp.i
-.PHONY : mb_master.cpp.i
-
-mb_master.s: mb_master.cpp.s
-.PHONY : mb_master.s
-
-# target to generate assembly for a file
-mb_master.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/mb_master.cpp.s
-.PHONY : mb_master.cpp.s
-
-modbus_ex.o: modbus_ex.cpp.o
-.PHONY : modbus_ex.o
+DeviceConfigurator.o: DeviceConfigurator.cpp.o
+.PHONY : DeviceConfigurator.o
 
 # target to build an object file
-modbus_ex.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_ex.cpp.o
-.PHONY : modbus_ex.cpp.o
+DeviceConfigurator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/DeviceConfigurator.cpp.o
+.PHONY : DeviceConfigurator.cpp.o
 
-modbus_ex.i: modbus_ex.cpp.i
-.PHONY : modbus_ex.i
+DeviceConfigurator.i: DeviceConfigurator.cpp.i
+.PHONY : DeviceConfigurator.i
 
 # target to preprocess a source file
-modbus_ex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_ex.cpp.i
-.PHONY : modbus_ex.cpp.i
+DeviceConfigurator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/DeviceConfigurator.cpp.i
+.PHONY : DeviceConfigurator.cpp.i
 
-modbus_ex.s: modbus_ex.cpp.s
-.PHONY : modbus_ex.s
+DeviceConfigurator.s: DeviceConfigurator.cpp.s
+.PHONY : DeviceConfigurator.s
 
 # target to generate assembly for a file
-modbus_ex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_ex.cpp.s
-.PHONY : modbus_ex.cpp.s
+DeviceConfigurator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/DeviceConfigurator.cpp.s
+.PHONY : DeviceConfigurator.cpp.s
 
-modbus_test.o: modbus_test.cpp.o
-.PHONY : modbus_test.o
+ModbusDeviceManager.o: ModbusDeviceManager.cpp.o
+.PHONY : ModbusDeviceManager.o
 
 # target to build an object file
-modbus_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_test.cpp.o
-.PHONY : modbus_test.cpp.o
+ModbusDeviceManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ModbusDeviceManager.cpp.o
+.PHONY : ModbusDeviceManager.cpp.o
 
-modbus_test.i: modbus_test.cpp.i
-.PHONY : modbus_test.i
+ModbusDeviceManager.i: ModbusDeviceManager.cpp.i
+.PHONY : ModbusDeviceManager.i
 
 # target to preprocess a source file
-modbus_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_test.cpp.i
-.PHONY : modbus_test.cpp.i
+ModbusDeviceManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ModbusDeviceManager.cpp.i
+.PHONY : ModbusDeviceManager.cpp.i
 
-modbus_test.s: modbus_test.cpp.s
-.PHONY : modbus_test.s
+ModbusDeviceManager.s: ModbusDeviceManager.cpp.s
+.PHONY : ModbusDeviceManager.s
 
 # target to generate assembly for a file
-modbus_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/modbus_test.cpp.s
-.PHONY : modbus_test.cpp.s
+ModbusDeviceManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ModbusDeviceManager.cpp.s
+.PHONY : ModbusDeviceManager.cpp.s
+
+device_manager/device.o: device_manager/device.cpp.o
+.PHONY : device_manager/device.o
+
+# target to build an object file
+device_manager/device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/device.cpp.o
+.PHONY : device_manager/device.cpp.o
+
+device_manager/device.i: device_manager/device.cpp.i
+.PHONY : device_manager/device.i
+
+# target to preprocess a source file
+device_manager/device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/device.cpp.i
+.PHONY : device_manager/device.cpp.i
+
+device_manager/device.s: device_manager/device.cpp.s
+.PHONY : device_manager/device.s
+
+# target to generate assembly for a file
+device_manager/device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/device.cpp.s
+.PHONY : device_manager/device.cpp.s
+
+device_manager/mapping.o: device_manager/mapping.cpp.o
+.PHONY : device_manager/mapping.o
+
+# target to build an object file
+device_manager/mapping.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/mapping.cpp.o
+.PHONY : device_manager/mapping.cpp.o
+
+device_manager/mapping.i: device_manager/mapping.cpp.i
+.PHONY : device_manager/mapping.i
+
+# target to preprocess a source file
+device_manager/mapping.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/mapping.cpp.i
+.PHONY : device_manager/mapping.cpp.i
+
+device_manager/mapping.s: device_manager/mapping.cpp.s
+.PHONY : device_manager/mapping.s
+
+# target to generate assembly for a file
+device_manager/mapping.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/mapping.cpp.s
+.PHONY : device_manager/mapping.cpp.s
+
+modbus_port.o: modbus_port.cpp.o
+.PHONY : modbus_port.o
+
+# target to build an object file
+modbus_port.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/modbus_port.cpp.o
+.PHONY : modbus_port.cpp.o
+
+modbus_port.i: modbus_port.cpp.i
+.PHONY : modbus_port.i
+
+# target to preprocess a source file
+modbus_port.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/modbus_port.cpp.i
+.PHONY : modbus_port.cpp.i
+
+modbus_port.s: modbus_port.cpp.s
+.PHONY : modbus_port.s
+
+# target to generate assembly for a file
+modbus_port.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/modbus_port.cpp.s
+.PHONY : modbus_port.cpp.s
+
+test_1.o: test_1.cpp.o
+.PHONY : test_1.o
+
+# target to build an object file
+test_1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test_1.cpp.o
+.PHONY : test_1.cpp.o
+
+test_1.i: test_1.cpp.i
+.PHONY : test_1.i
+
+# target to preprocess a source file
+test_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test_1.cpp.i
+.PHONY : test_1.cpp.i
+
+test_1.s: test_1.cpp.s
+.PHONY : test_1.s
+
+# target to generate assembly for a file
+test_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test_1.cpp.s
+.PHONY : test_1.cpp.s
 
 # Help Target
 help:
@@ -209,16 +281,25 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... modbus_test"
-	@echo "... mb_master.o"
-	@echo "... mb_master.i"
-	@echo "... mb_master.s"
-	@echo "... modbus_ex.o"
-	@echo "... modbus_ex.i"
-	@echo "... modbus_ex.s"
-	@echo "... modbus_test.o"
-	@echo "... modbus_test.i"
-	@echo "... modbus_test.s"
+	@echo "... main"
+	@echo "... DeviceConfigurator.o"
+	@echo "... DeviceConfigurator.i"
+	@echo "... DeviceConfigurator.s"
+	@echo "... ModbusDeviceManager.o"
+	@echo "... ModbusDeviceManager.i"
+	@echo "... ModbusDeviceManager.s"
+	@echo "... device_manager/device.o"
+	@echo "... device_manager/device.i"
+	@echo "... device_manager/device.s"
+	@echo "... device_manager/mapping.o"
+	@echo "... device_manager/mapping.i"
+	@echo "... device_manager/mapping.s"
+	@echo "... modbus_port.o"
+	@echo "... modbus_port.i"
+	@echo "... modbus_port.s"
+	@echo "... test_1.o"
+	@echo "... test_1.i"
+	@echo "... test_1.s"
 .PHONY : help
 
 

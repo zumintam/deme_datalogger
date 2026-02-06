@@ -69,67 +69,35 @@ include CMakeFiles/modbus_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/modbus_test.dir/flags.make
 
-CMakeFiles/modbus_test.dir/mb_master.cpp.o: CMakeFiles/modbus_test.dir/flags.make
-CMakeFiles/modbus_test.dir/mb_master.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/mb_master.cpp
-CMakeFiles/modbus_test.dir/mb_master.cpp.o: CMakeFiles/modbus_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/modbus_test.dir/mb_master.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modbus_test.dir/mb_master.cpp.o -MF CMakeFiles/modbus_test.dir/mb_master.cpp.o.d -o CMakeFiles/modbus_test.dir/mb_master.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/mb_master.cpp
+CMakeFiles/modbus_test.dir/device_manager/device.cpp.o: CMakeFiles/modbus_test.dir/flags.make
+CMakeFiles/modbus_test.dir/device_manager/device.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp
+CMakeFiles/modbus_test.dir/device_manager/device.cpp.o: CMakeFiles/modbus_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/modbus_test.dir/device_manager/device.cpp.o"
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modbus_test.dir/device_manager/device.cpp.o -MF CMakeFiles/modbus_test.dir/device_manager/device.cpp.o.d -o CMakeFiles/modbus_test.dir/device_manager/device.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp
 
-CMakeFiles/modbus_test.dir/mb_master.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modbus_test.dir/mb_master.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/mb_master.cpp > CMakeFiles/modbus_test.dir/mb_master.cpp.i
+CMakeFiles/modbus_test.dir/device_manager/device.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modbus_test.dir/device_manager/device.cpp.i"
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp > CMakeFiles/modbus_test.dir/device_manager/device.cpp.i
 
-CMakeFiles/modbus_test.dir/mb_master.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modbus_test.dir/mb_master.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/mb_master.cpp -o CMakeFiles/modbus_test.dir/mb_master.cpp.s
-
-CMakeFiles/modbus_test.dir/modbus_ex.cpp.o: CMakeFiles/modbus_test.dir/flags.make
-CMakeFiles/modbus_test.dir/modbus_ex.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_ex.cpp
-CMakeFiles/modbus_test.dir/modbus_ex.cpp.o: CMakeFiles/modbus_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/modbus_test.dir/modbus_ex.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modbus_test.dir/modbus_ex.cpp.o -MF CMakeFiles/modbus_test.dir/modbus_ex.cpp.o.d -o CMakeFiles/modbus_test.dir/modbus_ex.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_ex.cpp
-
-CMakeFiles/modbus_test.dir/modbus_ex.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modbus_test.dir/modbus_ex.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_ex.cpp > CMakeFiles/modbus_test.dir/modbus_ex.cpp.i
-
-CMakeFiles/modbus_test.dir/modbus_ex.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modbus_test.dir/modbus_ex.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_ex.cpp -o CMakeFiles/modbus_test.dir/modbus_ex.cpp.s
-
-CMakeFiles/modbus_test.dir/modbus_test.cpp.o: CMakeFiles/modbus_test.dir/flags.make
-CMakeFiles/modbus_test.dir/modbus_test.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_test.cpp
-CMakeFiles/modbus_test.dir/modbus_test.cpp.o: CMakeFiles/modbus_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/modbus_test.dir/modbus_test.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/modbus_test.dir/modbus_test.cpp.o -MF CMakeFiles/modbus_test.dir/modbus_test.cpp.o.d -o CMakeFiles/modbus_test.dir/modbus_test.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_test.cpp
-
-CMakeFiles/modbus_test.dir/modbus_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/modbus_test.dir/modbus_test.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_test.cpp > CMakeFiles/modbus_test.dir/modbus_test.cpp.i
-
-CMakeFiles/modbus_test.dir/modbus_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modbus_test.dir/modbus_test.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_test.cpp -o CMakeFiles/modbus_test.dir/modbus_test.cpp.s
+CMakeFiles/modbus_test.dir/device_manager/device.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/modbus_test.dir/device_manager/device.cpp.s"
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp -o CMakeFiles/modbus_test.dir/device_manager/device.cpp.s
 
 # Object files for target modbus_test
 modbus_test_OBJECTS = \
-"CMakeFiles/modbus_test.dir/mb_master.cpp.o" \
-"CMakeFiles/modbus_test.dir/modbus_ex.cpp.o" \
-"CMakeFiles/modbus_test.dir/modbus_test.cpp.o"
+"CMakeFiles/modbus_test.dir/device_manager/device.cpp.o"
 
 # External object files for target modbus_test
 modbus_test_EXTERNAL_OBJECTS =
 
-modbus_test: CMakeFiles/modbus_test.dir/mb_master.cpp.o
-modbus_test: CMakeFiles/modbus_test.dir/modbus_ex.cpp.o
-modbus_test: CMakeFiles/modbus_test.dir/modbus_test.cpp.o
+modbus_test: CMakeFiles/modbus_test.dir/device_manager/device.cpp.o
 modbus_test: CMakeFiles/modbus_test.dir/build.make
 modbus_test: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/libmodbus.a
 modbus_test: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/libmeter_driver.a
 modbus_test: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/libzmq.a
 modbus_test: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/libcjson.a
 modbus_test: CMakeFiles/modbus_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable modbus_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable modbus_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/modbus_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

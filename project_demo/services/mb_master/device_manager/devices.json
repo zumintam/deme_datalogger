@@ -1,0 +1,16 @@
+{
+    "devices": [
+        {
+            "id": "1",
+            "name": "dpm380_mapping",
+            "type": "meter",
+            "slave_id": 1
+        },
+        {
+            "id": "7",
+            "name": "dpm380_mapping",
+            "type": "meter",
+            "slave_id": 7
+        }
+    ]
+}

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/s
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/modbus_test.dir/all
+all: CMakeFiles/main.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/modbus_test.dir/clean
+clean: CMakeFiles/main.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/modbus_test.dir
+# Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/modbus_test.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=1,2,3,4 "Built target modbus_test"
-.PHONY : CMakeFiles/modbus_test.dir/all
+CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/modbus_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/modbus_test.dir/all
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles 0
-.PHONY : CMakeFiles/modbus_test.dir/rule
+.PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-modbus_test: CMakeFiles/modbus_test.dir/rule
-.PHONY : modbus_test
+main: CMakeFiles/main.dir/rule
+.PHONY : main
 
 # clean rule for target.
-CMakeFiles/modbus_test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_test.dir/build.make CMakeFiles/modbus_test.dir/clean
-.PHONY : CMakeFiles/modbus_test.dir/clean
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

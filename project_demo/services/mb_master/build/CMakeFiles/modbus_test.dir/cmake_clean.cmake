@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/modbus_test.dir/mb_master.cpp.o"
-  "CMakeFiles/modbus_test.dir/mb_master.cpp.o.d"
-  "CMakeFiles/modbus_test.dir/modbus_ex.cpp.o"
-  "CMakeFiles/modbus_test.dir/modbus_ex.cpp.o.d"
-  "CMakeFiles/modbus_test.dir/modbus_test.cpp.o"
-  "CMakeFiles/modbus_test.dir/modbus_test.cpp.o.d"
+  "CMakeFiles/modbus_test.dir/device_manager/device.cpp.o"
+  "CMakeFiles/modbus_test.dir/device_manager/device.cpp.o.d"
   "modbus_test"
   "modbus_test.pdb"
 )
