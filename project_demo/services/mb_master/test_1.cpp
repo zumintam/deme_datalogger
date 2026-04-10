@@ -210,7 +210,7 @@ void realModbusPollingThread(ModbusDeviceManager* manager,
     int cycle_count = 0;
 
     while (g_running && !device_statuses.empty()) {
-            cycle_count++;
+      cycle_count++;
 
       // Poll each device
       for (auto it = device_statuses.begin(); it != device_statuses.end();) {
@@ -275,6 +275,29 @@ void realModbusPollingThread(ModbusDeviceManager* manager,
         std::this_thread::sleep_for(std::chrono::milliseconds(POLL_DELAY_MS));
       }
 
+      // // Process any pending control commands first
+      // {
+      //   std::lock_guard<std::mutex> lock(manager->queue_mutex);
+      //   while (!manager->command_queue.empty()) {
+      //     auto cmd = manager->command_queue.front();
+      //     manager->command_queue.pop();
+
+      //     // Tìm thông tin slave_id từ device_id
+      //     int slave_id = manager->getSlaveId(cmd.device_id);
+
+      //     logInfo(serial_port, "Writing to Inverter " + cmd.device_id);
+      //     bool write_success =
+      //         port.writeSingleRegister(slave_id, cmd.address, cmd.value);
+
+      //     if (!write_success) {
+      //       logError(serial_port, "Write failed for " + cmd.device_id);
+      //     }
+
+      //     // Nghỉ một chút sau khi ghi để thiết bị kịp xử lý
+      //     std::this_thread::sleep_for(std::chrono::milliseconds(POLL_DELAY_MS));
+      //   }
+      // }
+
       // Check if all devices removed
       if (device_statuses.empty()) {
         logError(serial_port, "All devices removed. Thread exiting.");
@@ -293,7 +316,6 @@ void realModbusPollingThread(ModbusDeviceManager* manager,
             "Thread stopped. Cycles: " + std::to_string(cycle_count) +
                 ", Reads: " + std::to_string(port.getTotalReads()) +
                 ", Errors: " + std::to_string(port.getTotalErrors()));
-
   } catch (const std::exception& e) {
     logError(serial_port, std::string("FATAL: ") + e.what());
     g_running = false;
@@ -311,8 +333,10 @@ int main(int argc, char** argv) {
   // Default configuration
   std::string devices_file = "devices.json";
   std::string mappings_folder = "./mappings";
-  std::string serial_port1 = "/dev/ttyS3";
-  std::string serial_port2 = "/dev/ttyS1";
+  std::string serial_port1 = "/dev/ttyS1";
+  std::string serial_port2 = "/dev/ttyS2";
+  std::string serial_port3 = "/dev/ttyS3";
+  std::string serial_port4 = "/dev/ttyS4";
   int baud_rate = 115200;
 
   // Parse command line arguments
@@ -320,7 +344,9 @@ int main(int argc, char** argv) {
   if (argc > 2) mappings_folder = argv[2];
   if (argc > 3) serial_port1 = argv[3];
   if (argc > 4) serial_port2 = argv[4];
-  if (argc > 5) baud_rate = std::atoi(argv[5]);
+  if (argc > 5) serial_port3 = argv[5];
+  if (argc > 6) serial_port4 = argv[6];
+  if (argc > 7) baud_rate = std::atoi(argv[7]);
 
   std::cout << "\n╔═══════════════════════════════════════════╗\n";
   std::cout << "║   Modbus RTU Polling with Auto-Discovery  ║\n";
@@ -384,10 +410,15 @@ int main(int argc, char** argv) {
 
     std::thread polling_thread1(realModbusPollingThread, &manager, serial_port1,
                                 baud_rate);
+    std::thread polling_thread2(realModbusPollingThread, &manager, serial_port2,
+                                baud_rate);
 
     // Uncomment to enable second port
 
-    std::thread polling_thread2(realModbusPollingThread, &manager, serial_port2,
+    std::thread polling_thread3(realModbusPollingThread, &manager, serial_port3,
+                                baud_rate);
+
+    std::thread polling_thread4(realModbusPollingThread, &manager, serial_port4,
                                 baud_rate);
 
     std::cout << "\n╔═══════════════════════════════════════════╗\n";
@@ -399,7 +430,8 @@ int main(int argc, char** argv) {
     // ====================================================================
     polling_thread1.join();
     polling_thread2.join();
-
+    polling_thread3.join();
+    polling_thread4.join();
     std::cout << "\n[SHUTDOWN] All threads stopped\n";
 
   } catch (const std::exception& e) {
