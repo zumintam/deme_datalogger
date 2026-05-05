@@ -1,0 +1,1 @@
+/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-gcc -s CMakeFiles/aster_api.cgi.dir/aster_api.c.o -o aster_api.cgi  /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/components/dist_libs/lib/libcjson.a -lpthread -lrt -lm 

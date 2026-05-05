@@ -22,11 +22,11 @@ set(CMAKE_C_COMPILER_SYSROOT "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v
 set(CMAKE_COMPILER_SYSROOT "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot/usr")
 
 
-set(CMAKE_AR "/usr/bin/ar")
+set(CMAKE_AR "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-ar")
 set(CMAKE_C_COMPILER_AR "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-gcc-ar")
-set(CMAKE_RANLIB "/usr/bin/ranlib")
+set(CMAKE_RANLIB "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-ranlib")
 set(CMAKE_C_COMPILER_RANLIB "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-gcc-ranlib")
-set(CMAKE_LINKER "/usr/bin/ld")
+set(CMAKE_LINKER "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-ld")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCC 1)

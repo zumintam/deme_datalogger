@@ -1,0 +1,3 @@
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/wed_server/build/CMakeFiles/aster_api.cgi.dir
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/wed_server/build/CMakeFiles/edit_cache.dir
+/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/wed_server/build/CMakeFiles/rebuild_cache.dir

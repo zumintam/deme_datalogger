@@ -1,0 +1,17 @@
+#!/bin/sh
+# Horus Project: Optimize Console Logging Level
+
+case "$1" in
+    start)
+        echo ">>> Reducing Kernel Log Level to 1 (Alerts only) <<<"
+        dmesg -n 1
+        ;;
+    stop)
+        # Khôi phục lại mức mặc định (thường là 7) nếu cần khi shutdown
+        dmesg -n 7
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+        ;;
+esac

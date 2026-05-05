@@ -1,0 +1,12 @@
+# Horus Network Configuration Profile
+# ----------------------------------
+# Options for MODE: STATIC, DHCP
+MODE="STATIC"
+
+# IP Address Configuration
+IP="192.168.0.100"
+MASK="255.255.255.0"
+
+# Gateway & DNS (Required for STATIC mode only)
+GW="192.168.0.1"
+DNS="8.8.8.8"

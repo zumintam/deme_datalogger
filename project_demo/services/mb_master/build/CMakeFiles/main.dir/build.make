@@ -73,85 +73,85 @@ CMakeFiles/main.dir/test_1.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/test_1.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/test_1.cpp
 CMakeFiles/main.dir/test_1.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/test_1.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/test_1.cpp.o -MF CMakeFiles/main.dir/test_1.cpp.o.d -o CMakeFiles/main.dir/test_1.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/test_1.cpp
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/test_1.cpp.o -MF CMakeFiles/main.dir/test_1.cpp.o.d -o CMakeFiles/main.dir/test_1.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/test_1.cpp
 
 CMakeFiles/main.dir/test_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/test_1.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/test_1.cpp > CMakeFiles/main.dir/test_1.cpp.i
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/test_1.cpp > CMakeFiles/main.dir/test_1.cpp.i
 
 CMakeFiles/main.dir/test_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/test_1.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/test_1.cpp -o CMakeFiles/main.dir/test_1.cpp.s
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/test_1.cpp -o CMakeFiles/main.dir/test_1.cpp.s
 
 CMakeFiles/main.dir/device_manager/mapping.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/device_manager/mapping.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/mapping.cpp
 CMakeFiles/main.dir/device_manager/mapping.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/device_manager/mapping.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/device_manager/mapping.cpp.o -MF CMakeFiles/main.dir/device_manager/mapping.cpp.o.d -o CMakeFiles/main.dir/device_manager/mapping.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/mapping.cpp
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/device_manager/mapping.cpp.o -MF CMakeFiles/main.dir/device_manager/mapping.cpp.o.d -o CMakeFiles/main.dir/device_manager/mapping.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/mapping.cpp
 
 CMakeFiles/main.dir/device_manager/mapping.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/device_manager/mapping.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/mapping.cpp > CMakeFiles/main.dir/device_manager/mapping.cpp.i
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/mapping.cpp > CMakeFiles/main.dir/device_manager/mapping.cpp.i
 
 CMakeFiles/main.dir/device_manager/mapping.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/device_manager/mapping.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/mapping.cpp -o CMakeFiles/main.dir/device_manager/mapping.cpp.s
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/mapping.cpp -o CMakeFiles/main.dir/device_manager/mapping.cpp.s
 
 CMakeFiles/main.dir/device_manager/device.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/device_manager/device.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp
 CMakeFiles/main.dir/device_manager/device.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/device_manager/device.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/device_manager/device.cpp.o -MF CMakeFiles/main.dir/device_manager/device.cpp.o.d -o CMakeFiles/main.dir/device_manager/device.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/device_manager/device.cpp.o -MF CMakeFiles/main.dir/device_manager/device.cpp.o.d -o CMakeFiles/main.dir/device_manager/device.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp
 
 CMakeFiles/main.dir/device_manager/device.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/device_manager/device.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp > CMakeFiles/main.dir/device_manager/device.cpp.i
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp > CMakeFiles/main.dir/device_manager/device.cpp.i
 
 CMakeFiles/main.dir/device_manager/device.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/device_manager/device.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp -o CMakeFiles/main.dir/device_manager/device.cpp.s
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/device_manager/device.cpp -o CMakeFiles/main.dir/device_manager/device.cpp.s
 
 CMakeFiles/main.dir/ModbusDeviceManager.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/ModbusDeviceManager.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/ModbusDeviceManager.cpp
 CMakeFiles/main.dir/ModbusDeviceManager.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/ModbusDeviceManager.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/ModbusDeviceManager.cpp.o -MF CMakeFiles/main.dir/ModbusDeviceManager.cpp.o.d -o CMakeFiles/main.dir/ModbusDeviceManager.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/ModbusDeviceManager.cpp
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/ModbusDeviceManager.cpp.o -MF CMakeFiles/main.dir/ModbusDeviceManager.cpp.o.d -o CMakeFiles/main.dir/ModbusDeviceManager.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/ModbusDeviceManager.cpp
 
 CMakeFiles/main.dir/ModbusDeviceManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/ModbusDeviceManager.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/ModbusDeviceManager.cpp > CMakeFiles/main.dir/ModbusDeviceManager.cpp.i
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/ModbusDeviceManager.cpp > CMakeFiles/main.dir/ModbusDeviceManager.cpp.i
 
 CMakeFiles/main.dir/ModbusDeviceManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/ModbusDeviceManager.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/ModbusDeviceManager.cpp -o CMakeFiles/main.dir/ModbusDeviceManager.cpp.s
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/ModbusDeviceManager.cpp -o CMakeFiles/main.dir/ModbusDeviceManager.cpp.s
 
 CMakeFiles/main.dir/DeviceConfigurator.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/DeviceConfigurator.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/DeviceConfigurator.cpp
 CMakeFiles/main.dir/DeviceConfigurator.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/DeviceConfigurator.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/DeviceConfigurator.cpp.o -MF CMakeFiles/main.dir/DeviceConfigurator.cpp.o.d -o CMakeFiles/main.dir/DeviceConfigurator.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/DeviceConfigurator.cpp
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/DeviceConfigurator.cpp.o -MF CMakeFiles/main.dir/DeviceConfigurator.cpp.o.d -o CMakeFiles/main.dir/DeviceConfigurator.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/DeviceConfigurator.cpp
 
 CMakeFiles/main.dir/DeviceConfigurator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/DeviceConfigurator.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/DeviceConfigurator.cpp > CMakeFiles/main.dir/DeviceConfigurator.cpp.i
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/DeviceConfigurator.cpp > CMakeFiles/main.dir/DeviceConfigurator.cpp.i
 
 CMakeFiles/main.dir/DeviceConfigurator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/DeviceConfigurator.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/DeviceConfigurator.cpp -o CMakeFiles/main.dir/DeviceConfigurator.cpp.s
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/DeviceConfigurator.cpp -o CMakeFiles/main.dir/DeviceConfigurator.cpp.s
 
 CMakeFiles/main.dir/modbus_port.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/modbus_port.cpp.o: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_port.cpp
 CMakeFiles/main.dir/modbus_port.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/modbus_port.cpp.o"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/modbus_port.cpp.o -MF CMakeFiles/main.dir/modbus_port.cpp.o.d -o CMakeFiles/main.dir/modbus_port.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_port.cpp
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/modbus_port.cpp.o -MF CMakeFiles/main.dir/modbus_port.cpp.o.d -o CMakeFiles/main.dir/modbus_port.cpp.o -c /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_port.cpp
 
 CMakeFiles/main.dir/modbus_port.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/modbus_port.cpp.i"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_port.cpp > CMakeFiles/main.dir/modbus_port.cpp.i
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_port.cpp > CMakeFiles/main.dir/modbus_port.cpp.i
 
 CMakeFiles/main.dir/modbus_port.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/modbus_port.cpp.s"
-	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_port.cpp -o CMakeFiles/main.dir/modbus_port.cpp.s
+	/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/modbus_port.cpp -o CMakeFiles/main.dir/modbus_port.cpp.s
 
 # Object files for target main
 main_OBJECTS = \
