@@ -1,0 +1,22 @@
+{
+    "device_model": "SN2000",
+    "slave_id": 2,
+    "modbus_config": {
+        "start_address": 4000,
+        "quantity": 89,
+        "function_code": 3,
+        "byte_order": "big_endian"
+    },
+    "mapping": [
+        {
+            "address": 4000,
+            "name": "Negative_Real_Energy",
+            "type": "u32"
+        },
+        {
+            "address": 4002,
+            "name": "Positive_Real_Energy",
+            "type": "u32"
+        }
+    ]
+}

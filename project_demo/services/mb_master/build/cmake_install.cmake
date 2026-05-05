@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master
+# Install script for directory: /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

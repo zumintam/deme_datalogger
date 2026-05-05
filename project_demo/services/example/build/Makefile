@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/services/example
+CMAKE_SOURCE_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/example
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/build
+CMAKE_BINARY_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/example/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/build/CMakeFiles /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/example/build/CMakeFiles /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/example/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/shared/SDK_rk3506/task_12/project_demo/services/example/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/example/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named modbus_app
+# Target rules for targets named loadFileTest
 
 # Build rule for target.
-modbus_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modbus_app
-.PHONY : modbus_app
+loadFileTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 loadFileTest
+.PHONY : loadFileTest
 
 # fast build rule for target.
-modbus_app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_app.dir/build.make CMakeFiles/modbus_app.dir/build
-.PHONY : modbus_app/fast
+loadFileTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loadFileTest.dir/build.make CMakeFiles/loadFileTest.dir/build
+.PHONY : loadFileTest/fast
 
-modbus.o: modbus.cpp.o
-.PHONY : modbus.o
+loadFileTest.o: loadFileTest.cpp.o
+.PHONY : loadFileTest.o
 
 # target to build an object file
-modbus.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_app.dir/build.make CMakeFiles/modbus_app.dir/modbus.cpp.o
-.PHONY : modbus.cpp.o
+loadFileTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loadFileTest.dir/build.make CMakeFiles/loadFileTest.dir/loadFileTest.cpp.o
+.PHONY : loadFileTest.cpp.o
 
-modbus.i: modbus.cpp.i
-.PHONY : modbus.i
+loadFileTest.i: loadFileTest.cpp.i
+.PHONY : loadFileTest.i
 
 # target to preprocess a source file
-modbus.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_app.dir/build.make CMakeFiles/modbus_app.dir/modbus.cpp.i
-.PHONY : modbus.cpp.i
+loadFileTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loadFileTest.dir/build.make CMakeFiles/loadFileTest.dir/loadFileTest.cpp.i
+.PHONY : loadFileTest.cpp.i
 
-modbus.s: modbus.cpp.s
-.PHONY : modbus.s
+loadFileTest.s: loadFileTest.cpp.s
+.PHONY : loadFileTest.s
 
 # target to generate assembly for a file
-modbus.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/modbus_app.dir/build.make CMakeFiles/modbus_app.dir/modbus.cpp.s
-.PHONY : modbus.cpp.s
+loadFileTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/loadFileTest.dir/build.make CMakeFiles/loadFileTest.dir/loadFileTest.cpp.s
+.PHONY : loadFileTest.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... modbus_app"
-	@echo "... modbus.o"
-	@echo "... modbus.i"
-	@echo "... modbus.s"
+	@echo "... loadFileTest"
+	@echo "... loadFileTest.o"
+	@echo "... loadFileTest.i"
+	@echo "... loadFileTest.s"
 .PHONY : help
 
 

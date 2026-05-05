@@ -1,0 +1,80 @@
+#!/bin/sh
+#
+# Horus Project: Network Configuration Service
+# Purpose: Initialize network interfaces based on user-defined profiles.
+#
+
+# --- Professional Path Configuration ---
+CONF_FILE="/data/network.conf"
+
+# Target interface for Horus Gateway
+INTERFACE="eth1" 
+
+start() {
+    echo ">>> Initializing Horus Network Infrastructure: $INTERFACE <<<"
+    
+    # Pre-deployment: Flush existing configurations to prevent IP conflicts
+    ip addr flush dev $INTERFACE 2>/dev/null
+    ifconfig lo 127.0.0.1 up
+
+    ip addr flush dev $INTERFACE 2>/dev/null
+    ip route flush dev $INTERFACE 2>/dev/null
+
+    # Check for User-defined Configuration File
+    if [ -f "$CONF_FILE" ]; then
+        echo "[INFO] Loading Custom Profile: $CONF_FILE"
+        . "$CONF_FILE" 
+
+        if [ "$MODE" = "STATIC" ]; then
+            echo "[MODE] Static IP Assignment: $IP"
+            
+            # Applying IP and Netmask
+            ifconfig $INTERFACE $IP netmask ${MASK:-255.255.255.0} up
+            
+            # Default Gateway Implementation
+            if [ ! -z "$GW" ]; then
+                echo "[INFO] Setting Default Gateway: $GW"
+                # Remove existing default routes to ensure deterministic routing
+                route del default 2>/dev/null
+                route add default gw $GW dev $INTERFACE metric 10
+            fi
+            
+            # DNS Resolution Configuration
+            if [ ! -z "$DNS" ]; then
+                echo "[INFO] Updating DNS Resolver: $DNS"
+                echo "nameserver $DNS" > /etc/resolv.conf
+            fi
+        else
+            echo "[MODE] Dynamic Host Configuration Protocol (DHCP)..."
+            udhcpc -i $INTERFACE -b -t 10 -A 5
+        fi
+    else
+        # Fallback mechanism
+        echo "[WARN] Custom config not found. Falling back to default DHCP."
+        udhcpc -i $INTERFACE -b
+    fi
+}
+
+stop() {
+    echo ">>> Shutting down Network Interface: $INTERFACE <<<"
+    ifconfig $INTERFACE down
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    restart)
+        $0 stop
+        sleep 1
+        $0 start
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit 0

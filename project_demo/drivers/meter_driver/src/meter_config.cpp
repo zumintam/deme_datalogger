@@ -1,121 +1,123 @@
-#include "meter_config.h"
+#include "../include/meter_config.h"
 
-#include <fstream>
-#include <iostream>
-#include <sstream>
-#include <stdexcept>
+bool MeterConfig::loadFromJson(const std::string& json_content) {
+  cJSON* root = cJSON_Parse(json_content.c_str());
+  if (!root) return false;
 
-/**
- * @brief Đọc toàn bộ nội dung file vào một chuỗi string
- * @param filename Đường dẫn tệp cần đọc
- * @return Chuỗi chứa nội dung file, hoặc chuỗi rỗng nếu file không tồn tại
- */
-std::string readFileToString(const std::string& filename) {
-  std::ifstream fileStream(filename);
-  if (!fileStream.is_open()) {
-    return "";
-  }
-  std::stringstream buffer;
-  buffer << fileStream.rdbuf();
-  return buffer.str();
-}
+  // Đọc device_model
+  cJSON* model = cJSON_GetObjectItem(root, "device_model");
+  if (cJSON_IsString(model)) this->device_model = model->valuestring;
 
-/**
- * @brief Tải cấu hình thiết bị đồng hồ từ file JSON
- * @param filename Đường dẫn tệp JSON chứa cấu hình
- * @return true nếu tải cấu hình thành công, false nếu có lỗi
- *
- * Hàm này:
- * - Đọc file JSON từ đường dẫn được cấp
- * - Phân tích các trường cấu hình: device_id, serial_port, baudrate, slave_id,
- * poll_interval_ms
- * - Xử lý danh sách các register với địa chỉ và hệ số scale
- */
-bool MeterConfig::loadFromJson(const std::string& filename) {
-  std::string json_content = readFileToString(filename);
-  if (json_content.empty()) {  // tra ve "" neu khong doc duoc file
-    std::cerr << "ERROR: Khong the doc file hoac file rong: " << filename
-              << std::endl;
-    return false;  // return false if file cannot be read
+  // Đọc slave_id
+  cJSON* sid = cJSON_GetObjectItem(root, "slave_id");
+  if (cJSON_IsNumber(sid)) this->slave_id = sid->valueint;
+
+  // Đọc modbus_config
+  cJSON* m_cfg = cJSON_GetObjectItem(root, "modbus_config");
+  if (m_cfg) {
+    this->modbus.start_address =
+        cJSON_GetObjectItem(m_cfg, "start_address")->valueint;
+    this->modbus.quantity = cJSON_GetObjectItem(m_cfg, "quantity")->valueint;
+    this->modbus.function_code =
+        cJSON_GetObjectItem(m_cfg, "function_code")->valueint;
+    this->modbus.byte_order =
+        cJSON_GetObjectItem(m_cfg, "byte_order")
+            ? cJSON_GetObjectItem(m_cfg, "byte_order")->valuestring
+            : "big_endian";
   }
 
-  // Phân tích chuỗi JSON thành cấu trúc dữ liệu
-  cJSON* root =
-      cJSON_Parse(json_content.c_str());  // Parse JSON string tra ve cho root
-  if (root == nullptr) {
-    const char* error_ptr = cJSON_GetErrorPtr();
-    if (error_ptr != nullptr) {
-      std::cerr << "ERROR: Loi phan tich JSON truoc: " << error_ptr
-                << std::endl;
+  // Đọc mapping array
+  cJSON* mapping_arr = cJSON_GetObjectItem(root, "mapping");
+  if (cJSON_IsArray(mapping_arr)) {
+    this->mappings.clear();
+    int size = cJSON_GetArraySize(mapping_arr);
+    for (int i = 0; i < size; i++) {
+      cJSON* item = cJSON_GetArrayItem(mapping_arr, i);
+      RegisterMapping reg;
+      reg.name = cJSON_GetObjectItem(item, "name")->valuestring;
+      reg.address = (uint16_t)cJSON_GetObjectItem(item, "address")->valueint;
+      reg.type = cJSON_GetObjectItem(item, "type")->valuestring;
+      this->mappings.push_back(reg);
     }
-    return false;
-  }
-
-  bool success = true;
-  try {
-    // Trích xuất ID thiết bị tu root JSON
-    cJSON* id = cJSON_GetObjectItemCaseSensitive(root, "device_id");
-    if (cJSON_IsString(id))
-      device_id =
-          id->valuestring;  // neu dung la tra ve String thi ID = gia tri do
-
-    // Trích xuất cổng serial
-    cJSON* port = cJSON_GetObjectItemCaseSensitive(root, "serial_port");
-    if (cJSON_IsString(port)) serial_port = port->valuestring;
-
-    // Trích xuất tốc độ baud
-    cJSON* br = cJSON_GetObjectItemCaseSensitive(root, "baudrate");
-    if (cJSON_IsNumber(br)) baudrate = br->valueint;
-
-    // Trích xuất ID slave Modbus
-    cJSON* sid = cJSON_GetObjectItemCaseSensitive(root, "slave_id");
-    if (cJSON_IsNumber(sid)) slave_id = sid->valueint;
-
-    // Trích xuất khoảng thời gian polling (ms)
-    cJSON* poll = cJSON_GetObjectItemCaseSensitive(root, "poll_interval_ms");
-    if (cJSON_IsNumber(poll)) poll_interval_ms = poll->valueint;
-
-    // Trích xuất danh sách các register
-    cJSON* json_registers = cJSON_GetObjectItemCaseSensitive(root, "registers");
-
-    // lay danh sach register neu la object
-    if (cJSON_IsObject(
-            json_registers)) {  // gia tri tra ve cua registers phai la object
-      cJSON* register_item =
-          json_registers->child;  // tro toi cac truong con trong doi tuong
-
-      // Duyệt qua tất cả các register trong JSON
-      while (register_item != nullptr) {
-        RegisterConfig
-            reg;  // lay cua truc struct de luu tru cau hinh tung register
-        reg.name = register_item->string;
-        cJSON* register_info = register_item;
-
-        // Lấy địa chỉ register
-        cJSON* address =
-            cJSON_GetObjectItemCaseSensitive(register_info, "address");
-        if (cJSON_IsNumber(address))
-          reg.address = (std::uint16_t)address->valueint;
-
-        // Lấy hệ số scale để chuyển đổi giá trị
-        cJSON* scale = cJSON_GetObjectItemCaseSensitive(register_info, "scale");
-        if (cJSON_IsNumber(scale)) reg.scale = scale->valuedouble;
-
-        // Lưu cấu hình register vào bản đồ
-        registers[reg.name] = reg;
-        register_item = register_item->next;
-      }
-    }
-  } catch (...) {
-    std::cerr << "ERROR: Loi truy cap du lieu JSON voi cJSON." << std::endl;
-    success = false;
   }
 
   cJSON_Delete(root);
+  return true;
+}
+// kiem tra tinh hop le cua cau hinh
+// ID co nam trong khoang 1-247
+// mapping khong duoc de trong
+bool MeterConfig::validate() const {
+  if (slave_id < 1 || slave_id > 247) return false;
+  if (mappings.empty()) return false;
+  return true;
+}
 
-  if (success) {
-    std::cout << "[INFO] Tai cau hinh thanh cong cho: " << device_id
-              << std::endl;
+/**
+ * @brief Chuyển dữ liệu thanh ghi Modbus thô sang map giá trị.
+ *
+ * Đọc mảng thanh ghi 16-bit, giải mã theo cấu hình mapping (u16/u32/i32)
+ * và lưu kết quả vào map với khóa là tên thanh ghi.
+ *
+ * @param raw_data   Con trỏ tới mảng dữ liệu thanh ghi Modbus.
+ * @param output_map Map đầu ra (tên -> giá trị double).
+ * @return true nếu xử lý thành công.
+ */
+
+bool MeterConfig::parseRaw2Map(
+    const uint16_t* raw_data, std::map<std::string, double>& output_map) const {
+  for (const auto& reg : mappings) {
+    int idx = reg.address - modbus.start_address;
+    if (idx < 0 || idx >= modbus.quantity) continue;
+    double final_value = 0.0;
+
+    if (reg.type == "u32" || reg.type == "i32") {
+      if (idx + 1 < modbus.quantity) {
+        uint32_t val = (uint32_t)((raw_data[idx] << 16) | raw_data[idx + 1]);
+        final_value = static_cast<double>(val);
+      }
+    } else {
+      final_value = static_cast<double>(raw_data[idx]);
+    }
+    output_map[reg.name] = final_value;
   }
-  return success;
+  return true;
+}
+
+std::string MeterConfig::parse2Json(const std::uint16_t* raw_data) const {
+  // 1. Giải mã dữ liệu thô vào Map thông qua hàm trung gian
+  std::map<std::string, double> temp_map;
+  this->parseRaw2Map(raw_data, temp_map);
+
+  // 2. Khởi tạo đối tượng cJSON
+  cJSON* root = cJSON_CreateObject();
+  if (!root) return "{}";
+
+  // Thêm thông tin định danh thiết bị vào JSON (nếu cần)
+  cJSON_AddStringToObject(root, "device_model", this->device_model.c_str());
+
+  // Duyệt Map để đưa các thông số đo lường vào JSON
+  for (const auto& pair : temp_map) {
+    cJSON_AddNumberToObject(root, pair.first.c_str(), pair.second);
+  }
+
+  // 3. Chuyển đổi sang chuỗi và dọn dẹp bộ nhớ
+  char* rendered = cJSON_Print(root);  // Trả về chuỗi có định dạng (để debug)
+  // Nếu muốn tiết kiệm băng thông khi gửi đi, dùng cJSON_PrintUnformatted(root)
+
+  std::string json_result = rendered ? rendered : "{}";
+
+  // Giải phóng vùng nhớ do cJSON cấp phát (Rất quan trọng)
+  if (rendered) free(rendered);
+  cJSON_Delete(root);
+
+  return json_result;
+}
+
+std::string readFileToString(const std::string& filename) {
+  std::ifstream ifs(filename);
+  if (!ifs.is_open()) return "";
+  std::stringstream ss;
+  ss << ifs.rdbuf();
+  return ss.str();
 }

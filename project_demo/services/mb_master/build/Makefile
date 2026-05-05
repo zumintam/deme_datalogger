@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master
+CMAKE_SOURCE_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master/build
+CMAKE_BINARY_DIR = /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/shared/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mtam/tamvm/SDK_rk3506/SDK_rk3506/task_12/project_demo/services/mb_master/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,65 +117,161 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mb_master
+# Target rules for targets named main
 
 # Build rule for target.
-mb_master: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mb_master
-.PHONY : mb_master
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-mb_master/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/build
-.PHONY : mb_master/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-example.o: example.cpp.o
-.PHONY : example.o
-
-# target to build an object file
-example.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/example.cpp.o
-.PHONY : example.cpp.o
-
-example.i: example.cpp.i
-.PHONY : example.i
-
-# target to preprocess a source file
-example.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/example.cpp.i
-.PHONY : example.cpp.i
-
-example.s: example.cpp.s
-.PHONY : example.s
-
-# target to generate assembly for a file
-example.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/example.cpp.s
-.PHONY : example.cpp.s
-
-mb_master.o: mb_master.cpp.o
-.PHONY : mb_master.o
+DeviceConfigurator.o: DeviceConfigurator.cpp.o
+.PHONY : DeviceConfigurator.o
 
 # target to build an object file
-mb_master.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/mb_master.cpp.o
-.PHONY : mb_master.cpp.o
+DeviceConfigurator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/DeviceConfigurator.cpp.o
+.PHONY : DeviceConfigurator.cpp.o
 
-mb_master.i: mb_master.cpp.i
-.PHONY : mb_master.i
+DeviceConfigurator.i: DeviceConfigurator.cpp.i
+.PHONY : DeviceConfigurator.i
 
 # target to preprocess a source file
-mb_master.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/mb_master.cpp.i
-.PHONY : mb_master.cpp.i
+DeviceConfigurator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/DeviceConfigurator.cpp.i
+.PHONY : DeviceConfigurator.cpp.i
 
-mb_master.s: mb_master.cpp.s
-.PHONY : mb_master.s
+DeviceConfigurator.s: DeviceConfigurator.cpp.s
+.PHONY : DeviceConfigurator.s
 
 # target to generate assembly for a file
-mb_master.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mb_master.dir/build.make CMakeFiles/mb_master.dir/mb_master.cpp.s
-.PHONY : mb_master.cpp.s
+DeviceConfigurator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/DeviceConfigurator.cpp.s
+.PHONY : DeviceConfigurator.cpp.s
+
+ModbusDeviceManager.o: ModbusDeviceManager.cpp.o
+.PHONY : ModbusDeviceManager.o
+
+# target to build an object file
+ModbusDeviceManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ModbusDeviceManager.cpp.o
+.PHONY : ModbusDeviceManager.cpp.o
+
+ModbusDeviceManager.i: ModbusDeviceManager.cpp.i
+.PHONY : ModbusDeviceManager.i
+
+# target to preprocess a source file
+ModbusDeviceManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ModbusDeviceManager.cpp.i
+.PHONY : ModbusDeviceManager.cpp.i
+
+ModbusDeviceManager.s: ModbusDeviceManager.cpp.s
+.PHONY : ModbusDeviceManager.s
+
+# target to generate assembly for a file
+ModbusDeviceManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/ModbusDeviceManager.cpp.s
+.PHONY : ModbusDeviceManager.cpp.s
+
+device_manager/device.o: device_manager/device.cpp.o
+.PHONY : device_manager/device.o
+
+# target to build an object file
+device_manager/device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/device.cpp.o
+.PHONY : device_manager/device.cpp.o
+
+device_manager/device.i: device_manager/device.cpp.i
+.PHONY : device_manager/device.i
+
+# target to preprocess a source file
+device_manager/device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/device.cpp.i
+.PHONY : device_manager/device.cpp.i
+
+device_manager/device.s: device_manager/device.cpp.s
+.PHONY : device_manager/device.s
+
+# target to generate assembly for a file
+device_manager/device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/device.cpp.s
+.PHONY : device_manager/device.cpp.s
+
+device_manager/mapping.o: device_manager/mapping.cpp.o
+.PHONY : device_manager/mapping.o
+
+# target to build an object file
+device_manager/mapping.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/mapping.cpp.o
+.PHONY : device_manager/mapping.cpp.o
+
+device_manager/mapping.i: device_manager/mapping.cpp.i
+.PHONY : device_manager/mapping.i
+
+# target to preprocess a source file
+device_manager/mapping.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/mapping.cpp.i
+.PHONY : device_manager/mapping.cpp.i
+
+device_manager/mapping.s: device_manager/mapping.cpp.s
+.PHONY : device_manager/mapping.s
+
+# target to generate assembly for a file
+device_manager/mapping.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/device_manager/mapping.cpp.s
+.PHONY : device_manager/mapping.cpp.s
+
+modbus_port.o: modbus_port.cpp.o
+.PHONY : modbus_port.o
+
+# target to build an object file
+modbus_port.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/modbus_port.cpp.o
+.PHONY : modbus_port.cpp.o
+
+modbus_port.i: modbus_port.cpp.i
+.PHONY : modbus_port.i
+
+# target to preprocess a source file
+modbus_port.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/modbus_port.cpp.i
+.PHONY : modbus_port.cpp.i
+
+modbus_port.s: modbus_port.cpp.s
+.PHONY : modbus_port.s
+
+# target to generate assembly for a file
+modbus_port.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/modbus_port.cpp.s
+.PHONY : modbus_port.cpp.s
+
+test_1.o: test_1.cpp.o
+.PHONY : test_1.o
+
+# target to build an object file
+test_1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test_1.cpp.o
+.PHONY : test_1.cpp.o
+
+test_1.i: test_1.cpp.i
+.PHONY : test_1.i
+
+# target to preprocess a source file
+test_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test_1.cpp.i
+.PHONY : test_1.cpp.i
+
+test_1.s: test_1.cpp.s
+.PHONY : test_1.s
+
+# target to generate assembly for a file
+test_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/test_1.cpp.s
+.PHONY : test_1.cpp.s
 
 # Help Target
 help:
@@ -185,13 +281,25 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... mb_master"
-	@echo "... example.o"
-	@echo "... example.i"
-	@echo "... example.s"
-	@echo "... mb_master.o"
-	@echo "... mb_master.i"
-	@echo "... mb_master.s"
+	@echo "... main"
+	@echo "... DeviceConfigurator.o"
+	@echo "... DeviceConfigurator.i"
+	@echo "... DeviceConfigurator.s"
+	@echo "... ModbusDeviceManager.o"
+	@echo "... ModbusDeviceManager.i"
+	@echo "... ModbusDeviceManager.s"
+	@echo "... device_manager/device.o"
+	@echo "... device_manager/device.i"
+	@echo "... device_manager/device.s"
+	@echo "... device_manager/mapping.o"
+	@echo "... device_manager/mapping.i"
+	@echo "... device_manager/mapping.s"
+	@echo "... modbus_port.o"
+	@echo "... modbus_port.i"
+	@echo "... modbus_port.s"
+	@echo "... test_1.o"
+	@echo "... test_1.i"
+	@echo "... test_1.s"
 .PHONY : help
 
 

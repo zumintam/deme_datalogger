@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-g++")
+set(CMAKE_CXX_COMPILER "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-g++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "12.4.0")
@@ -19,15 +19,15 @@ set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "GNU")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
-set(CMAKE_CXX_COMPILER_SYSROOT "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr")
-set(CMAKE_COMPILER_SYSROOT "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr")
+set(CMAKE_CXX_COMPILER_SYSROOT "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot/usr")
+set(CMAKE_COMPILER_SYSROOT "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot/usr")
 
 
-set(CMAKE_AR "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-ar")
-set(CMAKE_CXX_COMPILER_AR "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc-ar")
-set(CMAKE_RANLIB "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-gcc-ranlib")
-set(CMAKE_LINKER "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/bin/arm-buildroot-linux-gnueabihf-ld")
+set(CMAKE_AR "/usr/bin/ar")
+set(CMAKE_CXX_COMPILER_AR "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-gcc-ar")
+set(CMAKE_RANLIB "/usr/bin/ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/bin/arm-buildroot-linux-gnueabihf-gcc-ranlib")
+set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
@@ -80,7 +80,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/backward;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/include;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/arm-buildroot-linux-gnueabihf;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/include/c++/12.4.0/backward;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0/include-fixed;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/include;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/lib;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/lib;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506-emmc/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/lib/gcc/arm-buildroot-linux-gnueabihf/12.4.0;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/lib;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot/lib;/home/mtam/tamvm/SDK_rk3506/rk3506_linux6.1_rkr4_v1/buildroot/output/rockchip_rk3506/host/arm-buildroot-linux-gnueabihf/sysroot/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
